@@ -8,7 +8,7 @@ Atualmente o [site do Guru-SP](http://www.guru-sp.org) utiliza o Mediawiki (engi
 
 Qualquer pessoa pode participar do projeto, basta pedir acesso de commiter ou fazer um fork do projeto e então fazer um pull request.
 
-O desenvolvimento das funcionalidades do projeto será organizado através de um [projeto no Pivotal Tracker](https://www.pivotaltracker.com/projects/211425) (envie seu e-mail utilizado no pivotal para contato at guru-sp.com ser adicionado ao projeto).
+O desenvolvimento das funcionalidades do projeto será organizado através de um [projeto no Pivotal Tracker](https://www.pivotaltracker.com/projects/211425) (envie seu e-mail utilizado no pivotal para contato at guru-sp.com para ser adicionado ao projeto).
 
 ***
 

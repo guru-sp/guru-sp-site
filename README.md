@@ -1,22 +1,22 @@
-= Novo site do Guru-SP
+# Novo site do Guru-SP
 
-== Descrição
+## Descrição
 
 A ideia desse projeto é criar um novo site para o Guru-SP (Grupo de Usuário Ruby de SP) utilizando Rails 3 e outras gems e plugins comumente utilizados.
 
-Atualmente o site do Guru-SP (http://www.guru-sp.com ou http://www.guru-sp.org) utiliza o Mediawiki (engine de wiki da Wikipedia).
+Atualmente o [site do Guru-SP](http://www.guru-sp.org) utiliza o Mediawiki (engine de wiki da Wikipedia).
 
 Qualquer pessoa pode participar do projeto, basta pedir acesso de commiter ou fazer um fork do projeto e então fazer um pull request.
 
-O desenvolvimento das funcionalidades do projeto será organizado através do Pivotal Tracker (envie seu e-mail utilizado no pivotal para ser adicionado ao projeto):
- - https://www.pivotaltracker.com/projects/211425
+O desenvolvimento das funcionalidades do projeto será organizado através de um [projeto no Pivotal Tracker](https://www.pivotaltracker.com/projects/211425) (envie seu e-mail utilizado no pivotal para contato at guru-sp.com ser adicionado ao projeto).
 
+***
 
-== Funcionalidades básicas
+## Funcionalidades básicas
 
 Aqui estou listando coisas que acredito serem interessantes para o site. Não é uma lista fechada nem completa. Pode-se remover ou adicionar novas funcionalidades/seções de acordo com as ideias e disposição dos desenvolvedores.
 
-== Home
+## Home
 
   É a página inicial do site.
 
@@ -36,7 +36,7 @@ Aqui estou listando coisas que acredito serem interessantes para o site. Não é
 
 
   Bônus:
-    - Recursos - Página editável (ao estilo wiki) com recursos para quem está começando com Ruby/Rails, como livros, 
+    - Recursos - Página editável (ao estilo wiki) com recursos para quem está começando com Ruby/Rails, como livros,
       blogs, vídeos, material gratuito, entre outros
     - Mostrar na home últimas postagens da Lista de discussão
     - Links para outros Gurus e grupos Ruby pelo mundo
@@ -47,7 +47,7 @@ Aqui estou listando coisas que acredito serem interessantes para o site. Não é
     - Planet de blogs dos membros
     - [Sua ideia aqui]
 
-== Seção encontros
+## Seção encontros
 
 É a seção mais importante do site que reune o que aconteceu/acontecerá nos encontros presenciais do grupo e pode ser a primeira a ser desenvolvida.
 
@@ -80,14 +80,14 @@ Um encontro é formado por:
     - Link, logo e nome dos patrocinadores/apoiadores desse encontro
 
 
-== Seção sobre
+## Seção sobre
 
   Página editável por membros fundadores contando:
    - como e quando o Guru-SP foi criado;
    - motivação e objetivos do grupo.
 
 
-== Seção contato
+## Seção contato
 
   Contém informações sobre como entrar em contato com o grupo:
    - formulário de contato (email de quem entra em contato, motivo do contato, título e corpo)
@@ -96,7 +96,7 @@ Um encontro é formado por:
    - lista de discussão
 
 
-== Seção membros
+## Seção membros
 
   Basicamente é uma lista em que os membros podem colocar um pouco a seu respeito
 
@@ -111,6 +111,6 @@ Um encontro é formado por:
     - link github
     - link linkedin
 
-== Seção patrocinadores
-  
+## Seção patrocinadores
+
   Além de colocar os apoiadores dos encontros (que fornecem local e coffee break) seria interessante colocar em um único local todas as empresas que já coloboraram com o Guru-SP em encontros anteriores.

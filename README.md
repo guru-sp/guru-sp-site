@@ -4,17 +4,12 @@
 
 A ideia desse projeto é criar um novo site para o Guru-SP (Grupo de Usuário Ruby de SP) utilizando Rails 3 e outras gems e plugins comumente utilizados.
 
-Atualmente o site do Guru-SP (http://www.guru-sp.com ou http://www.guru-sp.org) utiliza o Mediawiki.
+Atualmente o site do Guru-SP (http://www.guru-sp.com ou http://www.guru-sp.org) utiliza o Mediawiki (engine de wiki da Wikipedia).
 
 Qualquer pessoa pode participar do projeto, basta pedir acesso de commiter ou fazer um fork do projeto e então fazer um pull request.
 
-O projeto será organizado através do Pivotal tracker:
+O desenvolvimento das funcionalidades do projeto será organizado através do Pivotal Tracker (envie seu e-mail utilizado no pivotal para ser adicionado ao projeto):
  - https://www.pivotaltracker.com/projects/211425
-
-
-== Desenvolvimento
-
-O site será desenvolvido em Rails 3
 
 
 == Funcionalidades básicas
@@ -25,16 +20,15 @@ Aqui estou listando coisas que acredito serem interessantes para o site. Não é
 
   É a página inicial do site.
 
-  O que a na home:
-    - Introdução básica sobre o grupo
-    - Link/data do próximo encontro
-    - Link/data e resumo do último encontro
-    - Patrocinadores / Apoio
+  O que há na home:
+    - Introdução básica sobre o que é o grupo
+    - Link/data e descrição do próximo encontro
+    - Link/data e descrição do último encontro
+    - Patrocinadores / Apoio (Logo e link das empresas que apoiam o Guru-SP)
     - Barra de navegação:
         - Sobre: história e objetivos do Guru-SP
         - Encontros: Histórico dos encontros/eventos realizados pelo Grupo
         - Contato: formulário/email/twitter para entrar em contato com staff do Grupo
-        - Recursos: Links para recursos para quem está começando com Ruby
         - Lista de discussão: Link para a lista de discussão do Google Groups
         - Membros: Lista de membros participantes
     - Últimos twits do guru-sp
@@ -42,12 +36,16 @@ Aqui estou listando coisas que acredito serem interessantes para o site. Não é
 
 
   Bônus:
+    - Recursos - Página editável (ao estilo wiki) com recursos para quem está começando com Ruby/Rails, como livros, 
+      blogs, vídeos, material gratuito, entre outros
+    - Mostrar na home últimas postagens da Lista de discussão
     - Links para outros Gurus e grupos Ruby pelo mundo
     - Projetos (projetos do guru no github)
-    - Vagas / oportunidades (integração ondetrabalhar.com)
+    - Vagas / oportunidades (integração www.ondetrabalhar.com)
+    - Feedback ( Link para sugestões de melhorias)
     - Empresas onde se trabalhar
-    - Cursos
-
+    - Planet de blogs dos membros
+    - [Sua ideia aqui]
 
 == Seção encontros
 
@@ -57,29 +55,29 @@ Um encontro é formado por:
   - Título (ex: 14o Encontro)
   - Data (quando ocorreu, ocorrerá)
   - Horário (início e término)
-  - Descrição (texto livre falando do encontro)
+  - Descrição (texto livre apresentando o encontro)
 
   - Local
-    - endereço e link do google maps do local (lugar padrão é a Caelum)
+    - endereço e imagem do google maps do local (lugar padrão é a Caelum)
 
   - Inscrição/quem vai - Apenas um link para o Agendatech (não precisa ser implementado pelo sistema)
 
-  - Atividades (o que haverá no encontro: pode ser palestra, coding dojo, mesa redonda, cofee break ou outra atividade)
+  - Atividades (o que haverá no encontro: pode ser palestra, coding dojo, mesa redonda, coffee break ou outra atividade)
     - tipo da atividade
     - se for palestra
       - título
       - apresentador(es)
-      - slides (embed do slideshare, link para site ou PDF)
-      - vídeo  (embed do youtube, blit.tv ou outro site)
-      - Descrição e recursos (texto livre com mais detalhes e possíveis links)
+      - slides (embed do slideshare, link para site ou PDF com os slides utilizados)
+      - vídeo  (embed do youtube, blip.tv ou outro site em que o vídeo foi hospedado)
+      - Descrição e recursos (texto livre com mais detalhes e possíveis links que sirvam de referência para o assunto)
 
 
-  - Álbum (álbum de fotos do encontro, pode ser embed de fotos do Picasa/Flickr ou apenas link)
+  - Álbum de fotos (álbum de fotos do encontro, pode ser embed de fotos do Picasa/Flickr ou apenas link)
 
-  - Posts sobre o encontro (links para blogs falando sobre o encontro)
+  - Posts sobre o encontro (links para blogs falando sobre como foi o encontro)
 
   - Apoiodores
-    - Link, logo e nome dos patrocinadores/apoiadores
+    - Link, logo e nome dos patrocinadores/apoiadores desse encontro
 
 
 == Seção sobre
@@ -113,8 +111,6 @@ Um encontro é formado por:
     - link github
     - link linkedin
 
-== Recursos
-  Página editável (ao estilo wiki) com recursos para quem está começando com Ruby/Rails, como livros, blogs, vídeos, entre outros.
-
-
-
+== Seção patrocinadores
+  
+  Além de colocar os apoiadores dos encontros (que fornecem local e coffee break) seria interessante colocar em um único local todas as empresas que já coloboraram com o Guru-SP em encontros anteriores.

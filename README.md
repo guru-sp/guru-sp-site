@@ -21,6 +21,7 @@ Aqui estou listando coisas que acredito serem interessantes para o site. Não é
   É a página inicial do site.
 
   O que há na home:
+
     - Introdução básica sobre o que é o grupo
     - Link/data e descrição do próximo encontro
     - Link/data e descrição do último encontro
@@ -35,7 +36,8 @@ Aqui estou listando coisas que acredito serem interessantes para o site. Não é
     - Link no logo do grupo para voltar para a home
 
 
-  Bônus:
+  **Bônus**:
+
     - Recursos - Página editável (ao estilo wiki) com recursos para quem está começando com Ruby/Rails, como livros,
       blogs, vídeos, material gratuito, entre outros
     - Mostrar na home últimas postagens da Lista de discussão
@@ -114,3 +116,4 @@ Um encontro é formado por:
 ## Seção patrocinadores
 
   Além de colocar os apoiadores dos encontros (que fornecem local e coffee break) seria interessante colocar em um único local todas as empresas que já coloboraram com o Guru-SP em encontros anteriores.
+

@@ -57,3 +57,8 @@ end
 group :production do
   gem "newrelic_rpm", ">=2.12.3"
 end
+
+group :devise do
+  gem 'ruby_parser'
+  gem 'hpricot'
+end

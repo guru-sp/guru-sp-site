@@ -1,0 +1,7 @@
+%h2 Sign up
+= semantic_form_for resource, :as => resource_name, :url => registration_path(resource_name) do |form|
+  = render :partial => "form", :locals => {:form => form}
+  
+  = form.buttons
+    
+= render :partial => "devise/shared/links"

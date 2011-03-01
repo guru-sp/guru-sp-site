@@ -12,7 +12,6 @@ gem "formtastic", ">=1.1.0"
 gem "friendly_id", "~>3.0"
 gem "compass", ">=0.10.5"
 gem "lemonade", "0.3.4"
-gem "barista", ">=0.5.0"
 gem "inploy", ">=1.6.8"
 
 group :development do

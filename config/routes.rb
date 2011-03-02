@@ -1,7 +1,9 @@
 GuruSpSite::Application.routes.draw do
+  get "pages/index"
+
   devise_for :users
-  
-  root :to => "application#index"
+
+  root :to => "pages#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

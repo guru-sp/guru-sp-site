@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Album do
   
-  context "#albums" do
+  context ".albums" do
     
     it "should return all albums" do
       Album.albums.should be_an_instance_of(Array)
@@ -14,7 +14,7 @@ describe Album do
 
   end
 
-  context "#photos" do
+  context ".photos" do
 
     it "should return all photos" do
       Album.photos(Album.albums.first[:id]).should be_an_instance_of(Array)      

@@ -1,4 +1,6 @@
 GuruSpSite::Application.routes.draw do
+  resources :meetings
+
   get "pages/index"
 
   devise_for :users

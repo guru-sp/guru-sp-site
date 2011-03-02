@@ -13,6 +13,7 @@ gem "friendly_id", "~>3.0"
 gem "compass", ">=0.10.5"
 gem "lemonade", "0.3.4"
 gem "inploy", ">=1.6.8"
+gem "jquery-rails"
 
 group :development do
   gem "autotest"

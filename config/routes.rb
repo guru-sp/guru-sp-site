@@ -1,5 +1,6 @@
 GuruSpSite::Application.routes.draw do
   get "pages/index"
+  get 'albums/index'
 
   devise_for :users
 

@@ -6,9 +6,7 @@ GuruSpSite::Application.routes.draw do
   devise_for :users
 
   root :to => "pages#index"
-  
-  resources :albums
-  match 'albums/:id' => 'albums#show', :as => :album
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

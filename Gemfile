@@ -22,10 +22,10 @@ group :development do
 end
 
 group :development, :test do
-  gem "evergreen"
   gem "factory_girl_rails"
   gem "rspec-rails", ">=2.0.1"
-  gem "evergreen", :require => "evergreen/rails"
+  gem 'web-app-theme', '>= 0.6.2'
+  gem "steak", ">=1.1.0"
   platforms :mri_18 do
     gem "ruby-debug"
   end
@@ -39,18 +39,12 @@ group :test do
   gem "remarkable", ">=4.0.0.alpha4"
   gem "remarkable_activemodel", ">=4.0.0.alpha4"
   gem "remarkable_activerecord", ">=4.0.0.alpha4"
-end
-
-group :cucumber do
-  gem "steak", ">=1.1.0"
   gem "capybara", ">=0.3.6"
   gem "database_cleaner", ">=0.5.0"
-  gem "spork", ">=0.8.4"
-  gem "pickle", ">=0.4.2"
 end
 
+
 group :production do
-  
 end
 
 group :devise do

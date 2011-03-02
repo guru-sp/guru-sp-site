@@ -5,9 +5,6 @@ db/*.sqlite3
 coverage
 solr
 public/cache
-public/system
-public/stylesheets
-public/javascripts
 public/javascripts/*_packaged.js
 doc/specs.html
 doc/features.html

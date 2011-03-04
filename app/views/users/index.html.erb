@@ -1,0 +1,12 @@
+<h2>Usuários</h2>
+<ul>
+  <% for user in @users %>
+  <li class="user" >
+    <%= user.email %> , <%= user.github %>
+    <% if user == current_user %>
+      (<%= link_to "Editar" , edit_user_path(user) %>)
+    <% end %>
+  </li>
+  <% end %>
+</ul>
+

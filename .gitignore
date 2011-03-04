@@ -22,3 +22,4 @@ spec/routing
 spec/views
 capybara*
 .rvmrc
+public/stylesheets

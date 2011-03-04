@@ -1,0 +1,6 @@
+<h1> Albums </h1>
+<ul>
+  <% @albums.each do |album| %>
+    <li><%= link_to album[:title], album_url(:id => album[:id]) %></li>
+  <% end %>
+</ul>

@@ -1,8 +1,10 @@
 GuruSpSite::Application.routes.draw do
+  resources :meetings
   devise_for :users
   resources :users , :except => [:show]
   get "pages/index"
   root :to => "pages#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

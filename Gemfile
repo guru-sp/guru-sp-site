@@ -28,6 +28,7 @@ group :development, :test do
   gem "rspec-rails", ">=2.0.1"
   gem 'web-app-theme', '>= 0.6.2'
   gem "steak", ">=1.1.0"
+  gem "evergreen", :require => "evergreen/rails"
   platforms :mri_18 do
     gem "ruby-debug"
   end

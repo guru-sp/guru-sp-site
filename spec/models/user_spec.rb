@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 describe User do
-  should_validate_uniqueness_of :email
-  should_validate_uniqueness_of :github
+  it { should validate_uniqueness_of :email }
+  it { should validate_uniqueness_of :github }
   
   before(:each) do
     Factory :user

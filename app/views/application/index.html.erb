@@ -1,0 +1,8 @@
+<h1>Index</h1>
+
+<% if user_signed_in? %>
+  <%= link_to "editar usuário", edit_user_registration_path %>
+  <%= link_to "logout", destroy_user_session_path %>
+<% else %>
+  <%= link_to "registrar-se", new_user_registration_path %>
+<% end %>

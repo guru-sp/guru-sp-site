@@ -9,7 +9,8 @@
 <body>
   <div id="container">
     <div id="header">
-      <h1><a href="/">GURU-SP</a></h1>
+      <img id="logo" src="/assets/logo-guru.png" alt="Logo do Guru-SP" width="83" height="60"/>
+      <h1><a href="/">GURU SP</a></h1>
       <div id="user-navigation">
         <ul class="wat-cf">
           <li><a href="#"><%= t("web-app-theme.profile", :default => "Profile") %></a></li>
@@ -37,7 +38,7 @@
         <%= yield %>
         <div id="footer">
           <div class="block">
-            <p>Copyright &copy; <%= Time.now.year %> Guru-SP - Grupo de Usuários Ruby de SP</p>
+            <p>Copyright &copy; <%= Time.now.year %> GURU SP - Grupo de Usuários Ruby de SP</p>
           </div>
         </div>
       </div>

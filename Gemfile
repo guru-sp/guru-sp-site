@@ -1,18 +1,16 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.10'
+gem "rails", ">=3.1.0.rc6"
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+gem "sqlite3-ruby", :require => "sqlite3"
 
-gem "rails_admin", :git => 'git://github.com/sferik/rails_admin.git'
-gem "inherited_resources", ">=1.1.2"
-gem "will_paginate", ">=3.0.pre2"
-gem "devise", ">=1.1.2"
-gem "formtastic", ">=1.1.0"
-gem "friendly_id", "~>3.0"
-gem "compass", ">=0.10.5"
-gem "lemonade", "0.3.4"
-gem "inploy", ">=1.6.8"
+gem "rails_admin", :git => "git://github.com/sferik/rails_admin.git"
+gem "ckeditor"
+gem "inherited_resources", ">=1.2.2"
+gem "kaminari"
+gem "devise", ">=1.4.2"
+gem "formtastic", ">=1.2.4"
+gem "friendly_id", ">=3.2.1"
 gem "jquery-rails"
 gem "picasa"
 
@@ -25,9 +23,9 @@ end
 
 group :development, :test do
   gem "factory_girl_rails"
-  gem "rspec-rails", ">=2.0.1"
-  gem 'web-app-theme', '>= 0.6.2'
-  gem "steak", ">=1.1.0"
+  gem "rspec-rails", ">=2.6.1"
+  gem "web-app-theme", ">=0.7.0"
+  gem "steak", ">=2.0.0"
   gem "evergreen", :require => "evergreen/rails"
   platforms :mri_18 do
     gem "ruby-debug"
@@ -38,12 +36,10 @@ group :development, :test do
 end
 
 group :test do
-  gem "rspec", ">=2.0.1"
-  gem "remarkable", ">=4.0.0.alpha4"
-  gem "remarkable_activemodel", ">=4.0.0.alpha4"
-  gem "remarkable_activerecord", ">=4.0.0.alpha4"
-  gem "capybara", ">=0.3.6"
-  gem "database_cleaner", ">=0.5.0"
+  gem "rspec", ">=2.6.0"
+  gem "shoulda-matchers",  :git => "git://github.com/thoughtbot/shoulda-matchers.git"
+  gem "capybara", ">=1.0.1"
+  gem "database_cleaner", ">=0.6.7"
 end
 
 
@@ -51,6 +47,6 @@ group :production do
 end
 
 group :devise do
-  gem 'ruby_parser'
-  gem 'hpricot'
+  gem "ruby_parser"
+  gem "hpricot"
 end

@@ -2,7 +2,7 @@ require 'picasa'
 
 class Album
 
-  PICASA_USER = "gurusp.org"
+  PICASA_USER = "gurusp.group"
 
   def self.albums
     Picasa.albums(:google_user => PICASA_USER)

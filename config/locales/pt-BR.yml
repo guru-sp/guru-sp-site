@@ -1,6 +1,6 @@
 # encoding: UTF-8
 # pt-BR translations for Ruby on Rails
-"pt-BR":
+pt-BR:
   # formatos de data e hora
   date:
     formats:
@@ -221,6 +221,7 @@
       less_than_or_equal_to: "deve ser menor ou igual a %{count}"
       odd: "deve ser ímpar"
       even: "deve ser par"
+      not_saved: "não foi salvo"
 
   activerecord:
     errors:

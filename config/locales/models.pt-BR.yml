@@ -1,0 +1,10 @@
+# encoding: UTF-8
+pt-BR:
+  activerecord:
+    models:
+      user: "Usuário"
+    attributes:
+      user:
+        password: Senha
+        current_password: "Senha atual"
+        password_confirmation: "Confirmação de senha"

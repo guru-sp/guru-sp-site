@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require File.expand_path(File.dirname(__FILE__) + '/acceptance_helper')
 
 feature "Managing Member", %q{
@@ -8,23 +9,21 @@ feature "Managing Member", %q{
 
   scenario "sign up" do
     visit "/"
-    click_link "Login"
-    click_link "Sign up"
+    click_link "Registrar-se"
     fill_in 'Email', :with => "nathan@vieiraproenca.com"
-    fill_in 'Password', :with => "secret"
-    fill_in 'Password confirmation', :with => "secret"
-    click_button "Sign up"
-    have_content "Logout"
+    fill_in 'user_password', :with => "secret"
+    fill_in 'user_password_confirmation', :with => "secret"
+    click_button "Registrar-se"
   end
   
   scenario "sign in" do
     visit "/"
     click_link 'Login'
     fill_in 'Email' , :with => "nathan@vieiraproenca.com"
-    fill_in 'Password', :with => "secret"
-    check "Remember me"
-    click_button "Sign in"
-    have_content "Logout"
+    fill_in 'user_password', :with => "secret"
+    check "user_remember_me"
+    click_button "Entrar"
+    have_content "Sair"
   end
   
   scenario "list users" do

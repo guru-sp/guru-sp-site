@@ -1,18 +1,23 @@
-<h2>Sign up</h2>
+<h2>Registro</h2>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+<p>Registre-se no site do <strong>Guru-SP</strong> para aparecer na nossa listagem de membros</p>
+
+<%= semantic_form_for resource, :as => resource_name, :url => registration_path(resource_name) do |f| %>
   <%= devise_error_messages! %>
 
   <p><%= f.label :email %><br />
   <%= f.email_field :email %></p>
 
-  <p><%= f.label :password %><br />
+  <p><%= f.label "Senha" %><br />
   <%= f.password_field :password %></p>
 
-  <p><%= f.label :password_confirmation %><br />
+  <p><%= f.label "Confirmação de senha" %><br />
   <%= f.password_field :password_confirmation %></p>
 
-  <p><%= f.submit "Sign up" %></p>
+  <p><%= f.label "Github", :hint => "Seu nome de usuário no github" %><br />
+  <%= f.text_field :github %></p>
+
+  <p><%= f.submit "Registrar-se" %></p>
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>

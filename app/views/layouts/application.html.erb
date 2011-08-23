@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>GURU-SP - Grupo de Usuários Ruby de SP</title>
+  <%= favicon_link_tag "favicon-guru.png", :type => "image/png" %>
   <%= stylesheet_link_tag "base", "formtastic", "style", "override", :cache => false %>
   <%= javascript_include_tag "application", :cache => false %>
   <%= csrf_meta_tag %>
@@ -52,6 +53,8 @@
       </div>
       <div id="sidebar">
         <%= yield :sidebar %>
+        <%= render "shared/twitter" %>
+        <%= render "shared/partners" %>
       </div>
     </div>
   </div>

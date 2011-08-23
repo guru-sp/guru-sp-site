@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>GURU-SP</title>
+  <title>GURU-SP - Grupo de Usuários Ruby de SP</title>
   <%= stylesheet_link_tag "web-app-theme/base", "web-app-theme/themes/default/style", "web-app-theme/override", :cache => true %>
   <%= javascript_include_tag :defaults, :cache => true %>
   <%= csrf_meta_tag %>
@@ -11,10 +11,16 @@
     <div id="header">
       <img id="logo" src="/assets/logo-guru.png" alt="Logo do Guru-SP" width="83" height="60"/>
       <h1><a href="/">GURU SP</a></h1>
+      <div id="main-navigation">
+        <ul class="wat-cf">
+          <li><a href="#">Encontros</a></li>
+          <li><a href="/sobre" alt="Sobre o Guru-SP">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Membros</a></li>
+      </div>
       <div id="user-navigation">
         <ul class="wat-cf">
-          <% if current_user %>
-          <li><a href="#"><%= t("web-app-theme.settings", :default => "Settings") %></a></li>
+          <% if user_signed_in? %>
           <li><%= link_to(t("web-app-theme.profile", :default => "Profile"), edit_user_registration_path) %></a></li>
           <li><%= link_to(t("web-app-theme.logout", :default => "Logout"), destroy_user_session_path) %></a></li>
           <% else %>
@@ -26,7 +32,7 @@
       <div id="main-navigation">
         <ul class="wat-cf"></ul>
       </div>
-    </div>    
+    </div>
     <div id="wrapper" class="wat-cf">
       <div class="flash">
         <% flash.each do |type, message| -%>
@@ -36,7 +42,11 @@
         <% end -%>
       </div>
       <div id="main">
-        <%= yield %>
+        <div class="block" id="block-text">
+          <div class="content">
+            <%= yield %>
+          </div>
+        </div>
         <div id="footer">
           <div class="block">
             <p>Copyright &copy; <%= Time.now.year %> GURU SP - Grupo de Usuários Ruby de SP</p>
@@ -50,3 +60,4 @@
   </div>
 </body>
 </html>
+

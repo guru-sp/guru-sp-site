@@ -39,7 +39,7 @@ body {
 
 #header {
   position: relative;
-  padding-top: 1px;  
+  padding-top: 1px;
 }
 
 #header h1 {
@@ -52,7 +52,7 @@ body {
   text-decoration: none;
 }
 
-#main {  
+#main {
   width: 70%;
   float: left;
 }
@@ -76,7 +76,7 @@ body {
   float: right;
 }
 
-#sidebar h3 {  
+#sidebar h3 {
   padding: 10px 15px;
   margin: 0;
   font-size: 13px;
@@ -159,7 +159,7 @@ body {
 }
 
 .secondary-navigation {
-  font-size: 13px;  
+  font-size: 13px;
   border-bottom-width: 10px;
   border-bottom-style: solid;
 }
@@ -210,7 +210,7 @@ body {
 }
 
 .table th.last {
-  width: 200px;  
+  width: 200px;
 }
 
 .table .checkbox {
@@ -310,7 +310,7 @@ ul.list li {
 }
 
 ul.list li .left {
-  float: left;  
+  float: left;
 }
 
 ul.list li .left .avatar {
@@ -333,7 +333,7 @@ ul.list li .item .avatar {
 
 #box {
   width: 500px;
-  margin: 50px auto;  
+  margin: 50px auto;
 }
 
 #box .block {
@@ -342,7 +342,7 @@ ul.list li .item .avatar {
 
 #box .block h2 {
   padding: 10px 15px;
-  margin: 0;  
+  margin: 0;
 }
 
 #box .block .content {
@@ -408,3 +408,14 @@ button.button:active, a.button:active {
 .link_button{
   cursor: pointer;
 }
+
+.estatuto {
+  font-size: 110%;
+  line-height: 140%;
+  margin-left: 30px;
+}
+
+.estatuto ul {
+  padding: 8px;
+}
+

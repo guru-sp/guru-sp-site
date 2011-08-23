@@ -11,7 +11,7 @@ GuruSpSite::Application.routes.draw do
   resources :users , :except => [:show]
   root :to => "pages#index"
 
-
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
 
   # The priority is based upon order of creation:

@@ -1,13 +1,18 @@
 GuruSpSite::Application.routes.draw do
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
-  
+
   resources :meetings
 
   get "pages/index"
+  get "pages/sobre"
+  match "sobre" => "pages#sobre"
 
   devise_for :users
   resources :users , :except => [:show]
   root :to => "pages#index"
+
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -66,3 +71,4 @@ GuruSpSite::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 end
+

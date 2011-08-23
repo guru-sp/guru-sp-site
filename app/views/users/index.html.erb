@@ -1,12 +1,19 @@
 <h2>Usuários</h2>
-<ul>
+
+<div class="inner">
+<ul class="list">
   <% for user in @users %>
   <li class="user" >
-    <%= user.email %> , <%= user.github %>
-    <% if user == current_user %>
-      (<%= link_to "Editar" , edit_user_path(user) %>)
-    <% end %>
+    <div class="left"></div>
+    <div class="item">
+      <p><%= user.github %>
+      <% if user == current_user %>
+        (<%= link_to "Editar" , edit_user_path(user) %>)
+      <% end %>
+      </p>
+    </div>
   </li>
   <% end %>
 </ul>
+</div>
 

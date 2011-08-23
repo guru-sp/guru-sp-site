@@ -1,11 +1,13 @@
+/** This is the original web-app-theme main stylesheet */
+
 * {margin:0;padding:0}
 .clear { clear: both; height: 0; }
 
 .wat-cf:after {
-     content: ".";
-     display: block;
-     height: 0;
-     clear: both;
+     content: "."; 
+     display: block; 
+     height: 0; 
+     clear: both; 
      visibility: hidden;
 }
 
@@ -26,7 +28,7 @@ a img { border: none; }
 
 body {
   font-size: 12px;
-  font-family: sans-serif;
+  font-family: sans-serif;  
 }
 
 #container {
@@ -39,12 +41,12 @@ body {
 
 #header {
   position: relative;
-  padding-top: 1px;
+  padding-top: 1px;  
 }
 
 #header h1 {
   margin: 0;
-  padding: 10px 0;
+  padding: 10px 0;  
   font-size: 26px;
 }
 
@@ -52,9 +54,9 @@ body {
   text-decoration: none;
 }
 
-#main {
+#main {  
   width: 70%;
-  float: left;
+  float: left;    
 }
 
 .actions-bar {
@@ -73,10 +75,10 @@ body {
 
 #sidebar {
   width: 25%;
-  float: right;
+  float: right;      
 }
 
-#sidebar h3 {
+#sidebar h3 {  
   padding: 10px 15px;
   margin: 0;
   font-size: 13px;
@@ -110,7 +112,7 @@ body {
 }
 
 #main .block .content .inner {
-  padding: 0 15px 15px;
+  padding: 0 15px 15px;  
 }
 
 #main .main p.first {
@@ -120,7 +122,7 @@ body {
 #user-navigation {
   position: absolute;
   top: 0px;
-  right: 20px;
+  right: 20px;  
 }
 
 #main-navigation {
@@ -134,7 +136,7 @@ body {
 }
 
 #user-navigation ul li, #main-navigation ul li, .secondary-navigation ul li {
-  float: left;
+  float: left;  
 }
 
 #main-navigation ul li {
@@ -159,14 +161,14 @@ body {
 }
 
 .secondary-navigation {
-  font-size: 13px;
+  font-size: 13px;  
   border-bottom-width: 10px;
   border-bottom-style: solid;
 }
 
 .secondary-navigation ul li a {
   display: block;
-  padding: 10px 15px;
+  padding: 10px 15px;  
 }
 
 #footer {
@@ -175,27 +177,27 @@ body {
 
 /* pagination */
 
-.pagination a, .pagination span, .pagination em {
+.pagination a, .pagination span {
   padding: 2px 5px;
-  margin-right: 5px;
+  margin-right: 5px; 
   display: block;
   float: left;
   border-style: solid;
   border-width: 1px;
 }
 
-.pagination em {
-  font-weight: bold;
+.pagination span.current {
+  font-weight: bold;  
 }
 
 .pagination a {
-  text-decoration: none;
+  text-decoration: none;  
 }
 
 /* tables */
 .table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: collapse;  
   margin-bottom: 15px;
 }
 
@@ -210,7 +212,7 @@ body {
 }
 
 .table th.last {
-  width: 200px;
+  width: 200px;  
 }
 
 .table .checkbox {
@@ -278,7 +280,7 @@ input.checkbox {
 
 .form label.label {
   display: block;
-  padding-bottom: 2px;
+  padding-bottom: 2px;  
   font-weight: bold;
 }
 
@@ -310,7 +312,7 @@ ul.list li {
 }
 
 ul.list li .left {
-  float: left;
+  float: left;  
 }
 
 ul.list li .left .avatar {
@@ -333,7 +335,7 @@ ul.list li .item .avatar {
 
 #box {
   width: 500px;
-  margin: 50px auto;
+  margin: 50px auto;  
 }
 
 #box .block {
@@ -342,7 +344,7 @@ ul.list li .item .avatar {
 
 #box .block h2 {
   padding: 10px 15px;
-  margin: 0;
+  margin: 0;  
 }
 
 #box .block .content {
@@ -359,33 +361,24 @@ a.button:link, a.button:visited, a.button:hover, a.button:active, button.button 
   background-color: #eee;
   border:1px solid #bfbfbf;
   font-size: 1em;
-  line-height: 1.3em;
+  line-height: 26px;
   font-weight:bold;
   cursor:pointer;
-  padding:5px 10px 6px 7px;
   text-decoration: none;
+  padding: 0 10px;
+  height: 26px;
 }
 
 button.button {
-  width:auto;
-  overflow:visible;
-  padding:4px 10px 3px 7px; /* IE6 */
-}
-button.button[type] {
-  padding:5px 10px 5px 7px; /* Firefox */
-  line-height:17px; /* Safari */
+  height: 28px;
 }
 
-*:first-child+html button.button[type] {
-  padding:4px 10px 3px 7px; /* IE7 */
-}
-
-button.button img, a.button img {
-  margin:0 3px -3px 0 !important;
-  padding:0;
-  border:none;
-  width:16px;
-  height:16px;
+.button img {
+  vertical-align: middle;
+  margin: 0 0 2px -3px;
+  border: none;
+  width: 16px;
+  height: 16px;
 }
 
 button.button:hover, a.button:hover {
@@ -395,17 +388,3 @@ button.button:hover, a.button:hover {
 button.button:active, a.button:active {
   background-color:#e5e5e5;
 }
-.text_button_padding{
-  color: #222222;
-  display: block;
-  float: left;
-  font-size: 1em;
-  line-height: 2em;
-  margin: 0 7px 0 0;
-  padding: 5px 0 6px 7px;
-  text-decoration: none;
-}
-.link_button{
-  cursor: pointer;
-}
-

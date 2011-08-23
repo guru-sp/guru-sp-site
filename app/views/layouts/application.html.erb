@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>GURU-SP - Grupo de Usuários Ruby de SP</title>
-  <%= stylesheet_link_tag "base", "style", "jquery-ui", "jquery.tipsy", "uniform.default", "formtastic", "override", :cache => true %>
+  <%= stylesheet_link_tag "base", "jquery-ui", "jquery.tipsy", "formtastic", "uniform_default", "style", "override", :cache => true %>
   <%= javascript_include_tag "all", :cache => true %>
   <%= csrf_meta_tag %>
 </head>
@@ -32,14 +32,14 @@
     </div>
     <div id="wrapper" class="wat-cf">
       <div id="main">
+        <div class="flash">
+          <% flash.each do |type, message| -%>
+            <div class="message <%= type %>">
+              <p><%= message %></p>
+            </div>
+          <% end -%>
+        </div>
         <div class="block" id="block-text">
-          <div class="flash">
-            <% flash.each do |type, message| -%>
-              <div class="message <%= type %>">
-                <p><%= message %></p>
-              </div>
-            <% end -%>
-          </div>
           <div class="content">
             <%= yield %>
           </div>

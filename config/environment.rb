@@ -5,3 +5,4 @@ require File.expand_path('../application', __FILE__)
 GuruSpSite::Application.initialize!
 
 Synthesis::AssetPackage.merge_environments = %w(staging production)
+

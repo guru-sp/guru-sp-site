@@ -9,7 +9,7 @@ gem "ckeditor"
 gem "inherited_resources", ">=1.2.2"
 gem "kaminari"
 gem "devise", ">=1.4.2"
-gem "formtastic", ">=1.2.4"
+gem "formtastic", ">=2.0.0.rc4"
 gem "friendly_id", ">=3.2.1"
 gem "jquery-rails"
 gem "picasa"
@@ -50,3 +50,4 @@ group :devise do
   gem "ruby_parser"
   gem "hpricot"
 end
+

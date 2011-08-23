@@ -409,13 +409,3 @@ button.button:active, a.button:active {
   cursor: pointer;
 }
 
-.estatuto {
-  font-size: 110%;
-  line-height: 140%;
-  margin-left: 30px;
-}
-
-.estatuto ul {
-  padding: 8px;
-}
-

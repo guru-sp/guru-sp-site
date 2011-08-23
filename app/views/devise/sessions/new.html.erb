@@ -1,17 +1,22 @@
-<h2>Efetuar login</h2>
+<div id="box">
+  <div class="block" id="block-login">
+    <h2>Efetuar login</h2>
+    <div class="content login">
+      <%= semantic_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |form| %>
+        <%= form.inputs do %>
+          <%= form.input :email %>
+          <%= form.input :password %></p>
+        <% end %>
+        <% if devise_mapping.rememberable? -%>
+          <%= form.input :remember_me, :as => :boolean %>
+        <% end %>
+        <%= form.buttons do %>
+          <%= form.commit_button %>
+        <% end %>
+      <% end %>
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <p><%= f.label :email %><br />
-  <%= f.email_field :email %></p>
+      <%= render :partial => "devise/shared/links" %>
+    </div>
+  </div>
+</div>
 
-  <p><%= f.label "Senha" %><br />
-  <%= f.password_field :password %></p>
-
-  <% if devise_mapping.rememberable? -%>
-    <p><%= f.check_box :remember_me %> <%= f.label "lembrar-se de mim" %></p>
-  <% end -%>
-
-  <p><%= f.submit "Entrar" %></p>
-<% end %>
-
-<%= render :partial => "devise/shared/links" %>

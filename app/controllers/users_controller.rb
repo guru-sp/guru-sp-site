@@ -2,11 +2,11 @@ class UsersController < ApplicationController
   def index
     @users = User.all
   end
-  
+
   def edit
     @user = User.find(params[:id]) || current_user
   end
-  
+
   def update
     @user = User.new params[:user]
     if @user.save
@@ -17,3 +17,4 @@ class UsersController < ApplicationController
   end
 
 end
+

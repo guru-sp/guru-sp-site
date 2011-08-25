@@ -15,3 +15,8 @@
   margin: 10px 5px 0 0;
 }
 
+.twitter_guru {
+  padding-left: 20px;
+  background: url('/assets/twitter_bird.png') -2px -2px no-repeat;
+}
+

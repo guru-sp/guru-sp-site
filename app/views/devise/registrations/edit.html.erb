@@ -1,28 +1,22 @@
-<h2>Editando conta</h2>
+<h2>Editando seu Perfil</h2>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
-  <%= devise_error_messages! %>
+<div class="inner">
+  <%= semantic_form_for resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put } do |form| %>
+    <%= form.inputs do %>
+      <%= form.input :email %>
+      <%= form.input :github, :hint => "nome do usuário no Github" %>
+      <%= form.input :password, :label => "Nova senha", :hint => "deixe em branco se não quiser alterá-la" %>
+      <%= form.input :password_confirmation, :label => "Confirmação da nova senha" %>
+      <%= form.input :password_confirmation, :label => "Senha atual*", :hint => "Forneça sua senha atual para alterar seus dados" %>
+    <% end %>
+    <%= form.buttons do %>
+      <%= form.commit_button :label => "Atualizar perfil" %>
+    <% end %>
+  <% end %>
+</div>
 
-  <p><%= f.label :email %><br />
-  <%= f.email_field :email %></p>
+<h2>Cancelamento de conta</h2>
+<div class="inner">
+  <p>Infeliz? <%= link_to "Cancelar sua conta", registration_path(resource_name), :confirm => "Tem certeza disso?", :method => :delete %>.</p>
+</div>
 
-  <p><%= f.label :github %><br />
-  <%= f.text_field :github %></p>
-
-  <p><%= f.label :password %> <i>(deixe em branco se não quiser alterá-lo)</i><br />
-  <%= f.password_field :password %></p>
-
-  <p><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></p>
-
-  <p><%= f.label :current_password %> <i>(você precisa fornecer sua senha atual para alteração dos seus dados)</i><br />
-  <%= f.password_field :current_password %></p>
-
-  <p><%= f.submit "Atualizar" %></p>
-<% end %>
-
-<h3>Cancelamento de conta</h3>
-
-<p>Infeliz? <%= link_to "Cancelar conta", registration_path(resource_name), :confirm => "Tem certeza disso?", :method => :delete %>.</p>
-
-<%= link_to "Voltar", :back %>

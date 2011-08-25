@@ -1,12 +1,15 @@
-<h2>Resend confirmation instructions</h2>
-
-<%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post }) do |f| %>
-  <%= devise_error_messages! %>
-
-  <p><%= f.label :email %><br />
-  <%= f.email_field :email %></p>
-
-  <p><%= f.submit "Resend confirmation instructions" %></p>
+<h2>Reenviar instruções de confirmação de cadastro</h2>
+<div class="inner">
+  <p>Não recebeu o email de confirmação? Vamos tentar novamente.</p>
+  <%= semantic_form_for resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post } do |form| %>
+    <%= form.inputs do %>
+        <%= form.input :email %>
+    <% end %>
+    <%= form.buttons do %>
+      <%= form.commit_button :label => "Enviar email" %>
+    <% end %>
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>
+</div>
+

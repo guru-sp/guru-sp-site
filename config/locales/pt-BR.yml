@@ -221,7 +221,7 @@ pt-BR:
       less_than_or_equal_to: "deve ser menor ou igual a %{count}"
       odd: "deve ser ímpar"
       even: "deve ser par"
-      not_saved: "não foi salvo"
+      not_saved: "Ocorreram os seguintes erros:"
 
   activerecord:
     errors:
@@ -238,3 +238,4 @@ pt-BR:
 
       full_messages:
         format: "%{attribute} %{message}"
+

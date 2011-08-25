@@ -1,16 +1,17 @@
-<h2>Change your password</h2>
+<h2>Alteração de senha de acesso</h2>
 
-<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f| %>
-  <%= devise_error_messages! %>
-  <%= f.hidden_field :reset_password_token %>
+<div class="inner">
+  <%= semantic_form_for resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put } do |form| %>
+    <%= form.hidden_field :reset_password_token %>
+    <%= form.inputs do %>
+      <%= form.input :password, :label => "Nova senha" %>
+      <%= form.input :password_confirmation, :label => "Confirme a nova senha" %>
+    <% end %>
+    <%= form.buttons do %>
+      <%= form.commit_button :label => "Alterar minha senha" %>
+    <% end %>
+  <% end %>
 
-  <p><%= f.label :password, "New password" %><br />
-  <%= f.password_field :password %></p>
+  <%= render :partial => "devise/shared/links" %>
+</div>
 
-  <p><%= f.label :password_confirmation, "Confirm new password" %><br />
-  <%= f.password_field :password_confirmation %></p>
-
-  <p><%= f.submit "Change my password" %></p>
-<% end %>
-
-<%= render :partial => "devise/shared/links" %>

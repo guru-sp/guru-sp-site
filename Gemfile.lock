@@ -134,8 +134,6 @@ GEM
       railties (~> 3.0)
       thor (~> 0.14)
     json_pure (1.5.3)
-    kaminari (0.12.4)
-      rails (>= 3.0.0)
     launchy (2.0.5)
       addressable (~> 2.2.6)
     linecache (0.46)
@@ -244,6 +242,7 @@ GEM
     ruby_parser (2.0.6)
       sexp_processor (~> 3.0)
     rubyzip (0.9.4)
+    sass (3.1.7)
     selenium-webdriver (2.4.0)
       childprocess (>= 0.2.1)
       ffi (>= 1.0.7)
@@ -294,7 +293,6 @@ DEPENDENCIES
   hpricot
   inherited_resources (>= 1.2.2)
   jquery-rails
-  kaminari
   metric_fu (>= 1.5.1)
   picasa
   rails (~> 3.1.0)
@@ -305,6 +303,7 @@ DEPENDENCIES
   ruby-debug
   ruby-debug19
   ruby_parser
+  sass
   shoulda-matchers!
   sqlite3-ruby
   steak (>= 2.0.0)

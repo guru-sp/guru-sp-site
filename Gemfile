@@ -7,11 +7,11 @@ gem "sqlite3-ruby", :require => "sqlite3"
 gem "rails_admin", :git => "git://github.com/sferik/rails_admin.git"
 gem "ckeditor"
 gem "inherited_resources", ">=1.2.2"
-gem "kaminari"
 gem "devise", ">=1.4.3"
 gem "formtastic", ">=2.0.0.rc4"
 gem "friendly_id", ">=3.2.1"
 gem "jquery-rails"
+gem "sass"
 gem "picasa"
 
 group :development do

@@ -42,7 +42,6 @@ $gray: #c0c0c0;
   }
 }
 
-
 #sidebar {
   .twitter_guru {
     background: url('/assets/twitter_bird.png') -5px -5px no-repeat;
@@ -99,6 +98,12 @@ $gray: #c0c0c0;
 
   .place {
     font-size: 150%;
+    text-align: center;
+  }
+
+  .time {
+    padding-top: 6px;
+    font-size: 110%;
     text-align: center;
   }
 

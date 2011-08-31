@@ -1,15 +1,12 @@
-.DS_Store
 log/*
 tmp/*
 db/*.sqlite3
 coverage
 solr
 public/cache
-public/javascripts/*_packaged.js
 doc/specs.html
 doc/features.html
 tags
-*.sw?
 *~
 rerun.txt
 .bundle
@@ -23,3 +20,4 @@ spec/views
 capybara*
 .rvmrc
 public/stylesheets
+.sass-cache/*

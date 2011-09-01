@@ -11,6 +11,9 @@ GuruSpSite::Application.routes.draw do
   resources :users , :except => [:show]
   root :to => "pages#index"
 
+  match "membros" => "users#index"
+  match "encontros" => "meetings#index"
+
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
 

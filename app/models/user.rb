@@ -5,7 +5,12 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :github
-  
+  attr_accessible :email, :password, :password_confirmation,
+                  :remember_me, :github, :nickname, :name,
+                  :site, :rubyist_since
+
   validates_uniqueness_of :github
+  validates :nickname, :uniqueness => true, :presence => true
+
 end
+

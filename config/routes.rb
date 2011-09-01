@@ -1,6 +1,4 @@
 GuruSpSite::Application.routes.draw do
-  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
-
   resources :meetings
 
   get "pages/index"

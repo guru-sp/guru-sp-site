@@ -4,10 +4,13 @@
   <p>Registre-se no site do <strong>Guru-SP</strong> para aparecer na nossa listagem de membros.</p>
   <%= semantic_form_for resource, :as => resource_name, :url => registration_path(resource_name) do |form| %>
     <%= form.inputs do %>
-      <%= form.input :email %>
+      <%= form.input :email, :hint => "Será usado somente para login e não será revelado" %>
       <%= form.input :password %>
       <%= form.input :password_confirmation %>
+      <%= form.input :nickname, :hint => "Como você é conhecido na comunidade" %>
+      <%= form.input :name %>
       <%= form.input :github, :hint => "Seu nome de usuário no github" %>
+      <%= form.input :site, :hint => "Seu site ou blog pessoal (URL completa)" %>
     <% end %>
     <%= form.buttons do %>
       <%= form.commit_button :label => "Registrar-se" %>

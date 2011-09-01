@@ -15,6 +15,7 @@ feature "Managing Member", %q{
     visit "/"
     click_link "Registrar-se"
     fill_in "Email", :with => "nathan@vieiraproenca.com"
+    fill_in "Apelido", :with => "Carinha"
     fill_in "user_password", :with => "secret"
     fill_in "user_password_confirmation", :with => "secret"
     fill_in "user_github", :with => "secret"
@@ -44,10 +45,10 @@ feature "Managing Member", %q{
 
   scenario "list users" do
     5.times do |number|
-      User.create :email => "user#{number}@wtv.com" , :github => "user_#{number}", :password => "secret"
+      User.create :email => "user#{number}@wtv.com" , :github => "user_#{number}", :password => "secret", :nickname => "cara_#{number}"
     end
     visit "/users"
-    5.times {|number| page.should have_content "user_#{number}" }
+    5.times {|number| page.should have_content "cara_#{number}" }
   end
 
 end

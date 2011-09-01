@@ -1,12 +1,18 @@
-<h2>Usuários</h2>
+<h2>Membros</h2>
 
 <div class="inner">
 <ul class="list">
   <% for user in @users %>
   <li class="user" >
-    <div class="left"></div>
+    <div class="left">
+      <img class="avatar" src="assets/avatar.png" alt="avatar">
+    </div>
     <div class="item">
-      <p><%= user.github %>
+      <h3><%= user.nickname %></h3>
+      <p>
+      <strong>nome: </strong><%= link_to user.name  %> <br />
+      <strong>github: </strong><%= link_to user.github ,"https://github.com/#{user.github}" %> <br />
+      <strong>site: </strong><%= link_to user.site %> <br />
       <% if user == current_user %>
         (<%= link_to "Editar" , edit_user_path(user) %>)
       <% end %>

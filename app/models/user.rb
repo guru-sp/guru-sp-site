@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
                   :remember_me, :github, :nickname, :name,
                   :site, :rubyist_since
 
-  validates_uniqueness_of :github
+  validates :github, :uniqueness => true, :format => { :with => /^[-\w]*$/, :allow_blank => true }
   validates :nickname, :uniqueness => true, :presence => true
 
 end

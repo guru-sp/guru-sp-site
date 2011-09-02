@@ -5,4 +5,8 @@ class PagesController < ApplicationController
   def sobre
   end
 
+  def irc_channel
+  end
+
 end
+

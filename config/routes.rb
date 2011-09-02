@@ -3,7 +3,9 @@ GuruSpSite::Application.routes.draw do
 
   get "pages/index"
   get "pages/sobre"
+  get "pages/irc"
   match "sobre" => "pages#sobre"
+  match "canal-irc" => "pages#irc"
 
   devise_for :users
   resources :users , :except => [:show]

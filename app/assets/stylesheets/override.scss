@@ -5,6 +5,7 @@ $dark_gray: #111111;
 $medium_gray: #333333;
 $gray: #c0c0c0;
 
+
 @mixin links($color){
   a:link, a:hover, a:active, a:visited {
     color: $color;
@@ -27,6 +28,16 @@ $gray: #c0c0c0;
 }
 
 @include links($guru_red);
+
+.inner {
+  ul {
+    margin-left: 20px;
+    li {
+      line-height: 150%;
+      font-size: 110%;
+    }
+  }
+}
 
 #logo {
   float: left;

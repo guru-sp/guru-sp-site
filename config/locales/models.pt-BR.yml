@@ -1,8 +1,9 @@
 # encoding: UTF-8
-pt-BR:
+"pt-BR":
   activerecord:
     models:
       user: "Usuário"
+      meeting: "Encontro"
     attributes:
       user:
         password: "Senha"
@@ -12,4 +13,8 @@ pt-BR:
         nickname: "Apelido"
         name: "Nome"
         site: "site/blog pessoal"
+      meeting:
+        title: "Título"
+        description: "Descrição"
+        date: "Data"
 

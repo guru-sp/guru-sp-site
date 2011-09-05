@@ -249,6 +249,9 @@ GEM
       json_pure
       rubyzip
     sexp_processor (3.0.6)
+    simplecov (0.4.2)
+      simplecov-html (~> 0.4.4)
+    simplecov-html (0.4.5)
     sinatra (1.2.6)
       rack (~> 1.1)
       tilt (>= 1.2.2, < 2.0)
@@ -305,6 +308,7 @@ DEPENDENCIES
   ruby_parser
   sass
   shoulda-matchers!
+  simplecov (>= 0.4.2)
   sqlite3-ruby
   steak (>= 2.0.0)
   web-app-theme (>= 0.7.0)

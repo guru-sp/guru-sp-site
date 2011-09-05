@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # Read about factories at http://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
@@ -10,7 +11,7 @@ FactoryGirl.define do
     "pessoa#{n}"
   end
 
-    sequence :github do |n|
+  sequence :github do |n|
     "github#{n}"
   end
 

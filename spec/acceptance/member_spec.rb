@@ -43,6 +43,18 @@ feature "Managing Member", %q{
     end
   end
 
+  scenario "edit profile" do
+    login_with(user.email, "1234567890")
+    click_link "Perfil"
+    fill_in "Github", :with => "torvalds"
+    fill_in "site/blog pessoal", :with => "http://www.agaelebe.com"
+    fill_in "Senha atual*", :with => "123456"
+    click_button "Atualizar perfil"
+    within ".flash" do
+      page.should have_content "Seu perfil foi atualizado com sucesso."
+    end
+  end
+
   scenario "list users" do
     5.times do |number|
       User.create :email => "user#{number}@wtv.com" , :github => "user_#{number}", :password => "secret", :nickname => "cara_#{number}"

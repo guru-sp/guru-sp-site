@@ -8,9 +8,9 @@
       <%= form.input :name %>
       <%= form.input :github, :hint => "nome do usuário no Github" %>
       <%= form.input :site, :hint => "Seu site ou blog pessoal (URL completa)" %>
-      <%= form.input :password, :label => "Nova senha", :hint => "deixe em branco se não quiser alterá-la" %>
+      <%= form.input :password, :required => false, :label => "Nova senha", :hint => "deixe em branco se não quiser alterá-la" %>
       <%= form.input :password_confirmation, :label => "Confirmação da nova senha" %>
-      <%= form.input :current_password, :label => "Senha atual*", :hint => "Forneça sua senha atual para alterar seus dados" %>
+      <%= form.input :current_password, :required => true, :label => "Senha atual", :hint => "Forneça sua senha atual para alterar seus dados" %>
     <% end %>
     <%= form.buttons do %>
       <%= form.commit_button :label => "Atualizar perfil" %>

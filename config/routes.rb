@@ -10,6 +10,7 @@ GuruSpSite::Application.routes.draw do
   devise_for :users
   resources :users , :except => [:show]
   resources :albums , :only => [:index, :show]
+  resources :meetings , :only => [:index, :show]
   root :to => "pages#index"
 
   match "membros" => "users#index"

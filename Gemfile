@@ -18,7 +18,6 @@ group :development do
   gem "autotest"
   gem "autotest-notification"
   gem "rails3-generators", :git => "git://github.com/indirect/rails3-generators.git"
-  gem "metric_fu", ">=1.5.1"
 end
 
 group :development, :test do

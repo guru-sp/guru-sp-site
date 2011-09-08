@@ -1,20 +1,13 @@
-<p id="notice"><%= notice %></p>
+<h2><%= @meeting.title %></h2>
+<div class="inner meeting-body">
+  <div class="info">
+    <div class="date"><div class="icon date-icon"></div><%= l(@meeting.date) %></div>
+    <div class="place"><div class="icon place-icon"></div>Auditório da Caelum</div>
+  </div>
+  <p id="notice"><%= notice %></p>
+  <p>
+    <h3>Descrição</h3>
+    <%=raw @meeting.description %>
+  </p>
+</div>
 
-<p>
-  <b>Title:</b>
-  <%= @meeting.title %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @meeting.description %>
-</p>
-
-<p>
-  <b>Date:</b>
-  <%= @meeting.date %>
-</p>
-
-
-<%= link_to 'Edit', edit_meeting_path(@meeting) %> |
-<%= link_to 'Back', meetings_path %>

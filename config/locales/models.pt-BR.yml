@@ -2,8 +2,9 @@
 "pt-BR":
   activerecord:
     models:
-      user: "Usuário"
-      meeting: "Encontro"
+      user: "Usuários"
+      meeting: "Encontros"
+      talk: "Palestras"
     attributes:
       user:
         password: "Senha"
@@ -17,4 +18,8 @@
         title: "Título"
         description: "Descrição"
         date: "Data"
+      talk:
+        title: "Título"
+        description: "Descrição"
+        author_name: "Autor"
 

@@ -1,5 +1,8 @@
 require 'spec_helper'
 
 describe Talk do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { should validate_presence_of :title }
+  it { should validate_presence_of :presenter_name }
+  it { should belong_to :meeting }
 end
+

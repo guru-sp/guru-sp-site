@@ -60,9 +60,11 @@ pt-BR:
 
   time:
     formats:
-      default: "%A, %d de %B de %Y às %H:%Mh"
+      day_month: "%d/%m"
+      hour: "%H:%M hs"
+      default: "%A, %d de %B de %Y às %H:%M hs"
       short: "%d/%m, %H:%M h"
-      long: "%A, %d de %B de %Y, %H:%M h"
+      long: "%A, %d de %B de %Y, %H:%M hs"
     am: ''
     pm: ''
 

@@ -1,20 +1,14 @@
 GuruSpSite::Application.routes.draw do
-  resources :meetings
-
   get "pages/index"
   get "pages/sobre"
   get "pages/irc"
-  match "sobre" => "pages#sobre"
-  match "canal-irc" => "pages#irc"
-
+  match "sobre" => "pages#sobre", :as => :about
+  match "canal-irc" => "pages#irc", :as => :irc
   devise_for :users
-  resources :users , :except => [:show]
+  resources :users , :path => "membros", :except => [:show]
   resources :albums , :only => [:index, :show]
-  resources :meetings , :only => [:index, :show]
+  resources :meetings, :path => "encontros" , :only => [:index, :show]
   root :to => "pages#index"
-
-  match "membros" => "users#index"
-  match "encontros" => "meetings#index"
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 

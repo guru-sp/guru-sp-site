@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>GURU-SP - Grupo de Usuários Ruby de SP</title>
+  <title>Grupo de Usuários Ruby de SP | GURU-SP</title>
   <%= favicon_link_tag "favicon-guru.png", :type => "image/png" %>
   <%= stylesheet_link_tag "application", :cache => true %>
   <%= javascript_include_tag "application", :cache => false %>
@@ -10,22 +10,22 @@
 <body>
   <div id="container">
     <div id="header">
-      <img id="logo" src="/assets/logo-guru.png" alt="Logo do Guru-SP" width="83" height="60"/>
+      <img id="logo" src="/assets/logo-guru.png" alt="Logo do GURU-SP" width="83" height="60"/>
       <h1><a href="/">GURU SP</a></h1>
       <div id="main-navigation">
         <ul class="wat-cf">
-          <li><a href="/encontros" alt="Encontros presenciais do GURU-SP">Encontros</a></li>
-          <li><a href="/sobre" alt="Sobre o GURU-SPg">Sobre</a></li>
-          <li><a href="/membros" alt="Membros do GURU-SP">Membros</a></li>
+          <li><%= link_to "Encontros", meetings_path, :alt => "Encontros presenciais do GURU-SP" %></li>
+          <li><%= link_to "Sobre", about_path, :alt => "Saiba mais sobre o GURU-SP" %></li>
+          <li><%= link_to "Membros", users_path %></li>
       </div>
       <div id="user-navigation">
         <ul class="wat-cf">
           <% if user_signed_in? %>
-          <li><%= link_to(t("web-app-theme.profile", :default => "Profile"), edit_user_registration_path) %></a></li>
-          <li><%= link_to(t("web-app-theme.logout", :default => "Logout"), destroy_user_session_path) %></a></li>
+          <li><%= link_to t("web-app-theme.profile"), edit_user_registration_path %></a></li>
+          <li><%= link_to t("web-app-theme.logout"), destroy_user_session_path %></a></li>
           <% else %>
-          <li><%= link_to "Registrar-se" , new_user_registration_path %></li>
-          <li><%= link_to "Login" , new_user_session_path %></li>
+          <li><%= link_to "Registrar-se", new_user_registration_path %></li>
+          <li><%= link_to "Login", new_user_session_path %></li>
           <% end %>
         </ul>
       </div>

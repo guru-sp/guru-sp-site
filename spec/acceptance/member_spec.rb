@@ -75,7 +75,8 @@ feature "Managing Member", %q{
     5.times do |number|
       User.create :email => "user#{number}@wtv.com" , :github => "user_#{number}", :password => "secret", :nickname => "cara_#{number}"
     end
-    visit "/users"
+    visit "/"
+    click_link "Membros"
     5.times {|number| page.should have_content "cara_#{number}" }
   end
 

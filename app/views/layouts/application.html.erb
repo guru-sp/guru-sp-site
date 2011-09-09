@@ -10,8 +10,8 @@
 <body>
   <div id="container">
     <div id="header">
-      <img id="logo" src="/assets/logo-guru.png" alt="Logo do GURU-SP" width="83" height="60"/>
-      <h1><a href="/">GURU SP</a></h1>
+      <%= image_tag("logo-guru.png", :size => "83x60", :alt => "GURU-SP - logo", :id => "logo") %>
+      <h1><a href="/" alt="voltar para página inicial">GURU SP</a></h1>
       <div id="main-navigation">
         <ul class="wat-cf">
           <li><%= link_to "Encontros", meetings_path, :alt => "Encontros presenciais do GURU-SP" %></li>

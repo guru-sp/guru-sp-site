@@ -2,9 +2,12 @@ require 'spec_helper'
 
 describe User do
 
+  before do
+    FactoryGirl.create(:user, :email => "teste@teste.com", :github => "teste", :nickname => "testando")
+  end
+
   subject do
-    Factory.create(:user, :email => "teste@teste.com", :github => "teste", :nickname => "testando")
-    Factory.build(:user)
+    FactoryGirl.build(:user)
   end
 
   it { should validate_uniqueness_of :email }

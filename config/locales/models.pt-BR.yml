@@ -2,9 +2,9 @@
 "pt-BR":
   activerecord:
     models:
-      user: "Usuários"
-      meeting: "Encontros"
-      talk: "Palestras"
+      user: "Usuário"
+      meeting: "Encontro"
+      talk: "Palestra"
     attributes:
       user:
         password: "Senha"
@@ -21,5 +21,8 @@
       talk:
         title: "Título"
         description: "Descrição"
-        author_name: "Autor"
+        presenter_name: "Palestrante"
+        presenter_twitter: "Twitter do palestrante"
+        video_link: "Link para o vídeo"
+        video_link: "Link para os slides"
 

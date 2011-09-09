@@ -1,28 +1,25 @@
 <h2>Encontros Presenciais</h2>
 
 <div class="inner">
-  <p>
-  <table>
-    <tr>
-      <th>Título</th>
-      <th>Descrição</th>
-      <th>Data</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
+<p>
+Geralmente realizamos um encontro mensal, em um sábado pela manhã.</ br>
+Aqui você encontra o que acontecerá no nosso próximo encontro e também o que rolou nos encontros anteriores, incluindo fotos, vídeos e slides das palestras.
+</p>
 
-  <% @meetings.each do |meeting| %>
-    <tr>
-      <td><%= meeting.title %></td>
-      <td><%= meeting.description %></td>
-      <td><%= meeting.date %></td>
-      <td><%= link_to 'Exibir', meeting %></td>
-      <td><%= link_to 'Editar', edit_meeting_path(meeting) %></td>
-      <td><%= link_to 'Deletar', meeting, :confirm => 'Tem certeza?', :method => :delete %></td>
-    </tr>
+<ul class="list">
+  <% for meeting in @meetings %>
+  <li class="user" >
+    <div class="left">
+      <img class="avatar" src="assets/avatar.png" alt="avatar">
+    </div>
+    <div class="item">
+      <h3><%= link_to meeting.title, meeting_path(meeting) %></h3>
+      <div class="date"><div class="icon date-icon"></div><%= l(meeting.date) %></div>
+      <div class="place"><div class="icon place-icon"></div>Auditório da Caelum</div>
+      </p>
+    </div>
+  </li>
   <% end %>
-  </table>
-  </p>
+</ul>
 </div>
 

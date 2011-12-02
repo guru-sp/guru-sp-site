@@ -18,11 +18,12 @@
         title: "Título"
         description: "Descrição"
         date: "Data"
+        talks: "Palestras"
       talk:
         title: "Título"
         description: "Descrição"
         presenter_name: "Palestrante"
         presenter_twitter: "Twitter do palestrante"
         video_link: "Link para o vídeo"
-        video_link: "Link para os slides"
+        slides_link: "Link para os slides (slideshare)"
 

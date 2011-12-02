@@ -48,5 +48,6 @@ module GuruSpSite
 
     config.assets.enabled = true
 
+    config.cache_store = :memory_store
   end
 end

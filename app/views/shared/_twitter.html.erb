@@ -1,11 +1,15 @@
 <div class="block notice">
 <h4 class="twitter_guru">Twitter</h4>
+
 <ul class="tweets">
-  <li>
-    Rails 3.1.0 was released!!! https://rubygems.org...
-    <div class="date">há 20 minutos</span>
-  </li>
-  <li>poutz, mas vcs estão por fora mesmo hein! Para quem não sabia, evento de ruby on #rails <a href="http://j.mp/nKSEfB">http://j.mp/nKSEfB</a></li>
+  <% cache("tweets", :expires_in => 15.minutes) do  %>
+    <% Twitter.user_timeline("guru_sp", :count => 3).each do |tweet| %>
+    <li>
+      <%= tweet.text %>
+      <div class="date">há <%= distance_of_time_in_words_to_now(tweet.created_at) %></span>
+    </li>
+    <% end %>
+  <% end %>
 </ul>
   <p>
     <a class="follow_us" href="http://twitter.com/#!/guru_sp" alt="Conta do guru_sp no Twitter">siga o @guru_sp &raquo;</a>

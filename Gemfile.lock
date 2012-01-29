@@ -81,7 +81,7 @@ GEM
       execjs
     coffee-script-source (1.1.2)
     columnize (0.3.4)
-    database_cleaner (0.6.7)
+    database_cleaner (0.7.1)
     devise (1.4.3)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.0.3)
@@ -250,7 +250,7 @@ DEPENDENCIES
   autotest-notification
   capybara (~> 1.1.2)
   ckeditor
-  database_cleaner (>= 0.6.7)
+  database_cleaner (~> 0.7)
   devise (>= 1.4.3)
   evergreen
   factory_girl_rails

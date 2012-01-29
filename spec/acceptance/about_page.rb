@@ -1,5 +1,5 @@
 # encoding: UTF-8
-require File.expand_path(File.dirname(__FILE__) + '/acceptance_helper')
+require 'acceptance/acceptance_helper'
 
 feature "Visiting about page", %q{
   In order to read about the user group

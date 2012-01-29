@@ -1,5 +1,10 @@
 # Novo site do Guru-SP
 
+## Dependências
+
+- Capybara-webkit : essa gem é usada como driver para o capybara, já que é bem mais rápida que o selenium. Para instalar você vai precisar do QT:
+                    https://github.com/thoughtbot/capybara-webkit/wiki/Installing-QT
+
 ## Descrição
 
 A ideia desse projeto é criar um novo site para o Guru-SP (Grupo de Usuário Ruby de SP) utilizando Rails 3 e outras gems e plugins comumente utilizados.

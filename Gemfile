@@ -23,7 +23,6 @@ end
 
 group :development, :test do
   gem "factory_girl_rails"
-  gem "rspec-rails", ">=2.6.1"
   gem "web-app-theme", ">=0.7.0"
   gem "steak", ">=2.0.0"
   gem "evergreen", :require => "evergreen/rails"
@@ -36,7 +35,8 @@ group :development, :test do
 end
 
 group :test do
-  gem "rspec", ">=2.6.0"
+  gem "rspec", "~>2.8"
+  gem "rspec-rails", "~>2.8"
   gem "shoulda-matchers",  :git => "git://github.com/thoughtbot/shoulda-matchers.git"
   gem "capybara", "~>1.1.2"
   gem "database_cleaner", ">=0.6.7"

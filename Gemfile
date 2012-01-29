@@ -38,7 +38,7 @@ end
 group :test do
   gem "rspec", ">=2.6.0"
   gem "shoulda-matchers",  :git => "git://github.com/thoughtbot/shoulda-matchers.git"
-  gem "capybara", ">=1.0.1"
+  gem "capybara", "~>1.1.2"
   gem "database_cleaner", ">=0.6.7"
   gem 'simplecov', '>= 0.4.2', :require => false
 end

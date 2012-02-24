@@ -1,10 +1,10 @@
 class AlbumsController < ApplicationController
   def index
-    @albums = Album.albums
+    @albums = Album.all
   end
 
   def show
-    @album = Album.photos(params[:id])
+    @album = Album.new(params[:id])
   end
 end
 

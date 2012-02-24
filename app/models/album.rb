@@ -1,16 +1,15 @@
-require 'picasa'
-
 class Album
 
-  PICASA_USER = "gurusp.group"
-
-  def self.albums
-    Picasa.albums(:google_user => PICASA_USER)
+  def self.all
+    Picasa.albums
   end
 
-  def self.photos(album_id)
-    photos = Picasa.photos(:google_user => PICASA_USER, :album_id => album_id)
-    photos[:photos]
+  def initialize(album_id)
+    @content = Picasa.photos(:album_id => album_id)
+  end
+
+  def photos
+  	@content[:photos]
   end
 
 end

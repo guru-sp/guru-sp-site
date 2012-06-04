@@ -29,8 +29,8 @@ group :development, :test do
 end
 
 group :test do
-  gem "rspec", "~>2.8"
-  gem "rspec-rails", "~>2.8"
+  gem "rspec", "~>2.10"
+  gem "rspec-rails", "~>2.10"
   gem "shoulda-matchers",  :git => "git://github.com/thoughtbot/shoulda-matchers.git"
   gem "capybara", "~>1.1.2"
   gem "capybara-webkit"

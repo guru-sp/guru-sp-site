@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
-gem "rails", "~> 3.1"
+gem "rails", "=3.2.5"
 
-gem "sqlite3-ruby", :require => "sqlite3"
+gem "sqlite3-ruby"
 
 gem "rails_admin", :git => "git://github.com/sferik/rails_admin.git"
 gem "ckeditor"
@@ -26,12 +26,6 @@ group :development, :test do
   gem "web-app-theme", ">=0.7.0"
   gem "steak", ">=2.0.0"
   gem "evergreen", :require => "evergreen/rails"
-  platforms :mri_18 do
-    gem "ruby-debug"
-  end
-  platforms :mri_19 do
-    gem "ruby-debug19", :require => 'ruby-debug'
-  end
 end
 
 group :test do

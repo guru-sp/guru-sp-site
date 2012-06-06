@@ -75,7 +75,7 @@ pt-BR:
           menu: "Remover"
           breadcrumb: "Deletar"
           link: "Remover '%{object_label}'"
-          done: "remover"
+          done: "removido"
         bulk_delete:
           title: "Remover %{model_label_plural}"
           menu: "Remoção multipla"

@@ -12,8 +12,8 @@
       <%= form.input :github, :hint => "Seu nome de usuário no github" %>
       <%= form.input :site, :hint => "Seu site ou blog pessoal (URL completa)" %>
     <% end %>
-    <%= form.buttons do %>
-      <%= form.commit_button :label => "Registrar-se" %>
+    <%= form.actions do %>
+      <%= form.action :submit, :as => :button, :label => "Registrar-se" %>
     <% end %>
   <% end %>
 

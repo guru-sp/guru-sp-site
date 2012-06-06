@@ -6,8 +6,8 @@
     <%= form.inputs do %>
         <%= form.input :email %>
     <% end %>
-    <%= form.buttons do %>
-      <%= form.commit_button :label => "Enviar email" %>
+    <%= form.actions do %>
+      <%= form.action :submit, :as => :button, :label => "Enviar email" %>
     <% end %>
   <% end %>
   <%= render :partial => "devise/shared/links" %>

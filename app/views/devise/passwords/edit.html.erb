@@ -7,8 +7,8 @@
       <%= form.input :password, :label => "Nova senha" %>
       <%= form.input :password_confirmation, :label => "Confirme a nova senha" %>
     <% end %>
-    <%= form.buttons do %>
-      <%= form.commit_button :label => "Alterar minha senha" %>
+    <%= form.actions do %>
+      <%= form.action :submit, :as => :button, :label => "Alterar minha senha" %>
     <% end %>
   <% end %>
 

@@ -99,8 +99,8 @@ GEM
       multipart-post (~> 1.1.3)
       rack (>= 1.1.0, < 2)
     ffi (1.0.11)
-    formtastic (2.0.0.rc4)
-      rails (~> 3.0)
+    formtastic (2.2.1)
+      actionpack (>= 3.0)
     friendly_id (3.2.1.1)
       babosa (~> 0.3.0)
     haml (3.1.6)
@@ -263,7 +263,7 @@ DEPENDENCIES
   evergreen
   execjs
   factory_girl_rails
-  formtastic (>= 2.0.0.rc4)
+  formtastic (~> 2.2.1)
   friendly_id (>= 3.2.1)
   hpricot
   inherited_resources (>= 1.2.2)

@@ -8,8 +8,8 @@
         <%= form.input :remember_me, :as => :boolean %>
       <% end %>
     <% end %>
-    <%= form.buttons do %>
-      <%= form.commit_button :label => "Entrar" %>
+    <%= form.actions do %>
+      <%= form.action :submit, :as => :button, :label => "Entrar" %>
     <% end %>
   <% end %>
   <%= render :partial => "devise/shared/links" %>

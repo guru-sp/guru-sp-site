@@ -7,6 +7,7 @@ pt-BR:
 
   devise:
     failure:
+      already_authenticated: 'Você já está logado.'
       unauthenticated: 'Para continuar, faça login ou registre-se.'
       unconfirmed: 'Antes de continuar, confirme a sua conta.'
       locked: 'A sua conta está bloqueada.'

@@ -53,9 +53,13 @@ $gray: #c0c0c0;
 }
 
 #sidebar {
-  .twitter_guru {
+  .twitter_logo {
     background: url('/assets/twitter_bird.png') -5px -5px no-repeat;
     padding-left: 25px;
+  }
+
+  .twitter {
+    background: #019AD2;
   }
 
   .follow_us {

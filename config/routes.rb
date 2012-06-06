@@ -1,17 +1,21 @@
 GuruSpSite::Application.routes.draw do
+
   get "pages/index"
   get "pages/sobre"
   get "pages/irc"
+
   match "sobre" => "pages#sobre", :as => :about
   match "canal-irc" => "pages#irc", :as => :irc
+
   devise_for :users
+
   resources :users , :path => "membros", :except => [:show]
   resources :albums , :only => [:index, :show]
   resources :meetings, :path => "encontros" , :only => [:index, :show]
+
   root :to => "pages#index"
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

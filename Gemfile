@@ -3,9 +3,9 @@ source 'http://rubygems.org'
 gem "rails", "=3.2.5"
 
 gem "sqlite3-ruby"
-
-gem "rails_admin", :git => "git://github.com/sferik/rails_admin.git"
-gem "ckeditor"
+gem "therubyracer"
+gem "execjs"
+gem "rails_admin"
 gem "inherited_resources", ">=1.2.2"
 gem "devise", ">=1.4.3"
 gem "formtastic", ">=2.0.0.rc4"
@@ -16,6 +16,7 @@ gem "picasa"
 gem "twitter"
 
 group :development do
+  gem "thin"
   gem "autotest"
   gem "autotest-notification"
   gem "rails3-generators", :git => "git://github.com/indirect/rails3-generators.git"

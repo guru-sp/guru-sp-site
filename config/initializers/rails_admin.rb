@@ -13,9 +13,7 @@ RailsAdmin.config do |config|
       end
       field :title
       field :date
-      field :description, :text do
-        ckeditor true
-      end
+      field :description
     end
   end
 

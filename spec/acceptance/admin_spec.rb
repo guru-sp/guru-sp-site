@@ -1,5 +1,5 @@
 # encoding: UTF-8
-require 'acceptance/acceptance_helper'
+require 'spec_helper'
 
 feature "Accessing Admin Panel", %q{
   In order to manage the site

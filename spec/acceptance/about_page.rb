@@ -1,5 +1,5 @@
 # encoding: UTF-8
-require 'acceptance/acceptance_helper'
+require 'spec_helper'
 
 feature "Visiting about page", %q{
   In order to read about the user group

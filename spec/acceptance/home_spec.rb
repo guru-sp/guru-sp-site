@@ -1,5 +1,5 @@
 # encoding: UTF-8
-require 'acceptance/acceptance_helper'
+require 'spec_helper'
 
 feature "Visiting home page", %q{
   In order to know the user group

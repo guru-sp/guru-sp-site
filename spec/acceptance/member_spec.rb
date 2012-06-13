@@ -1,5 +1,5 @@
 # encoding: UTF-8
-require 'acceptance/acceptance_helper'
+require 'spec_helper'
 
 feature "Managing Member", %q{
   In order to make guru-sp website

@@ -1,4 +1,4 @@
-module HelperMethods
+module Helpers
   # Put helper methods you need to be available in all tests here.
   def login_with(email, password)
     visit "/"
@@ -8,6 +8,3 @@ module HelperMethods
     click_button "Entrar"
   end
 end
-
-RSpec.configuration.include HelperMethods, :type => :acceptance
-

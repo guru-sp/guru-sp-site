@@ -20,6 +20,6 @@
 
 <h2>Cancelamento de conta</h2>
 <div class="inner">
-  <p>Infeliz? <%= link_to "Cancele sua conta", registration_path(resource_name), :confirm => "Tem certeza disso?", :method => :delete %>.</p>
+  <p>Infeliz? <%= link_to "Cancele sua conta", registration_path(resource_name), :data => { :confirm => "Tem certeza disso?" }, :method => :delete %>.</p>
 </div>
 

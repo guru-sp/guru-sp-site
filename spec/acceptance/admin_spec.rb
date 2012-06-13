@@ -20,7 +20,6 @@ feature "Accessing Admin Panel", %q{
   scenario "successful sign in" do
     visit "/admin"
     login_with(admin_user.email, password)
-    save_and_open_page
     within ".alert" do
       page.should have_content "Conectado com sucesso."
     end

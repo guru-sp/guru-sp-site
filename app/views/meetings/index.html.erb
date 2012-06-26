@@ -8,9 +8,9 @@ Aqui você encontra o que acontecerá nos nossos próximos encontros e também o
 
 <ul class="list">
   <% for meeting in @meetings %>
-  <li class="user" >
+  <li>
     <div class="left">
-      <img class="avatar" src="assets/avatar.png" alt="avatar">
+      <div class="meeting-id"><%= meeting.id %></div>
     </div>
     <div class="item">
       <h3><%= link_to meeting.title, meeting_path(meeting) %></h3>

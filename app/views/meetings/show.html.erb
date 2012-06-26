@@ -1,8 +1,12 @@
 <h2><%= @meeting.title %></h2>
 <div class="inner meeting-body">
   <div class="info">
-    <div class="date"><div class="icon date-icon"></div><%= l(@meeting.date) %></div>
-    <div class="place"><div class="icon place-icon"></div>Auditório da Caelum</div>
+    <div class="date"><div class="icon date-icon"></div>
+    <h3><%= l(@meeting.date) %></h3>
+	</div>
+    <div class="place"><div class="icon place-icon"></div>
+	 <h3>Auditório da Caelum</h3>
+	</div>
   </div>
   <p id="notice"><%= notice %></p>
   <p>

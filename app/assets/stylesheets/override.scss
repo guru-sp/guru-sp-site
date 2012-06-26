@@ -28,12 +28,21 @@ $gray: #c0c0c0;
 
 @include links($guru_red);
 
+body {
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+#main .block .content p {
+    font-size: 15px;
+}
+
+
 .inner {
   ul {
     margin-left: 20px;
     li {
       line-height: 150%;
-      font-size: 110%;
     }
   }
 }
@@ -44,7 +53,6 @@ $gray: #c0c0c0;
 }
 
 .estatuto {
-  font-size: 110%;
   line-height: 140%;
   margin-left: 30px;
   ul {
@@ -66,7 +74,7 @@ $gray: #c0c0c0;
     background: $medium_gray;
     color: white;
     display: block;
-    font-size: 125%;
+    font-size: 115%;
     font-weight: bold;
     margin: 0 auto;
     padding: 10px 8px;
@@ -129,12 +137,16 @@ $gray: #c0c0c0;
   .place, .date {
     font-family: Verdana, sans-serif;
     font-size: 150%;
-    line-height: 135%;
-    margin: 6px 0px 0px 0px;
-    padding: 8px 0px 4px 0px;
+    margin: 4px 0px 6px 0px;
+    padding: 4px 0px 4px 0px;
     vertical-align: top;
     color: $medium_gray;
   }
+
+  .date h3, .place h3 {
+    display: inline-block;
+  }
+
   .icon {
     background: $guru_red url('/assets/meeting-icons.png') no-repeat;
     border-radius: 3px 3px 3px 3px;
@@ -156,3 +168,10 @@ $gray: #c0c0c0;
   }
 }
 
+.meeting-id {
+  color: $gray;
+  font-size: 400%;
+  width: 100%;
+  text-align: center;
+  padding: 20px 10px;
+}

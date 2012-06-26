@@ -108,9 +108,16 @@ body {
   }
   }
 
-  .meeting {
-    background-color: $guru_red;
-    background-image: none;
+
+
+.meeting {
+  background-color: $guru_red;
+  background-image: none;
+
+  a:link, a:hover, a:active, a:visited {
+    color: white;
+     text-decoration: none;
+  }
 
   .date {
     font-size: 400%;

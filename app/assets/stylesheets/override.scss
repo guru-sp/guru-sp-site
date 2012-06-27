@@ -146,20 +146,19 @@ body {
     font-size: 150%;
     margin: 4px 0px 6px 0px;
     padding: 4px 0px 4px 0px;
-    vertical-align: top;
     color: $medium_gray;
+    h3 {
+      vertical-align: top;
+      display: inline-block;
+      margin: 2px 0 0 0;
+    }
   }
-
-  .date h3, .place h3 {
-    display: inline-block;
-  }
-
   .icon {
     background: $guru_red url('/assets/meeting-icons.png') no-repeat;
     border-radius: 3px 3px 3px 3px;
     height: 25px;
     width: 25px;
-    margin-right: 10px;
+    margin-right: 5px;
     padding-left: 0;
     display: inline-block;
     -moz-border-radius: 3px 3px 3px 3px;

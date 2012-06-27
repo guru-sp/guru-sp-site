@@ -9,11 +9,14 @@ RailsAdmin.config do |config|
       field :date
     end
     edit do
-      field :talks do
-      end
       field :title
       field :date
       field :description
+      field :venue
+      field :agendatech_link
+      field :call4paperz_link
+      field :talks do
+      end
     end
   end
 

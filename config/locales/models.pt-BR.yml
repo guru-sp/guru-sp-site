@@ -5,6 +5,7 @@
       user: "Usuário"
       meeting: "Encontro"
       talk: "Palestra"
+      venue: "Local"
     attributes:
       user:
         password: "Senha"
@@ -24,6 +25,10 @@
         description: "Descrição"
         presenter_name: "Palestrante"
         presenter_twitter: "Twitter do palestrante"
-        video_link: "Link para o vídeo"
-        slides_link: "Link para os slides (slideshare)"
+        video_link: "Link para o vídeo (ou script para embed)"
+        slides_link: "Link para os slides (ou script para embed)"
+      venue:
+        name: "Nome"
+        address: "Endereço"
+        details: "Detalhes de como chegar"
 

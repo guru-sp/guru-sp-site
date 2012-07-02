@@ -17,8 +17,9 @@ gem "twitter"
 
 group :development do
   gem "thin"
-  gem "autotest"
-  gem "autotest-notification"
+  gem "guard"
+  gem "guard-rspec"
+  gem "guard-livereload"
   gem "rails3-generators", :git => "git://github.com/indirect/rails3-generators.git"
 end
 

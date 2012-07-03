@@ -15,6 +15,7 @@ RailsAdmin.config do |config|
       field :venue
       field :agendatech_link
       field :call4paperz_link
+      field :album_id
       field :talks do
       end
     end

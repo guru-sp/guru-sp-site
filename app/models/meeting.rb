@@ -8,5 +8,13 @@ class Meeting < ActiveRecord::Base
   def self.next_meeting
     self.where("date >= ?", Date.today).order('date ASC').first
   end
+
+  def photos
+    if self.album_id.present?
+      Album.new(self.album_id).photos
+    else
+      []
+    end
+  end
 end
 

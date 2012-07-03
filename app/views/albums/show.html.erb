@@ -1,6 +1,8 @@
 <div class="inner">
   <% @album.photos.each do |photo| %>
-    <%= image_tag photo[:thumbnail_1], :alt => photo[:title]  %>
+    <%= link_to photo[:photo] do %>
+      <%= image_tag photo[:thumbnail_1], :alt => photo[:title]  %>
+    <% end %>
   <% end %>
 </div>
 

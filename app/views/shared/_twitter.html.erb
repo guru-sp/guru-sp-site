@@ -1,16 +1,12 @@
-<div class="block notice twitter">
-<h4 class="twitter_logo">Twitter</h4>
+<%= content_for :javascripts do %>
+  <%= javascript_include_tag "jquery.tweet" %>
+  <%= javascript_include_tag "guru_sp.tweet" %>
+<% end %>
 
-<ul class="tweets">
-  <% cache("tweets", :expires_in => 15.minutes) do  %>
-    <% Twitter.user_timeline("guru_sp", :count => 3).each do |tweet| %>
-    <li>
-      <%= tweet.text %>
-      <div class="date">há <%= distance_of_time_in_words_to_now(tweet.created_at) %></span>
-    </li>
-    <% end %>
-  <% end %>
-</ul>
+<div class="block notice twitter">
+  <h4 class="twitter_logo">Twitter</h4>
+  <div class="tweets">
+  </div>
   <p>
     <a class="follow_us" href="http://twitter.com/#!/guru_sp" alt="Conta do guru_sp no Twitter">siga o @guru_sp &raquo;</a>
   </p>

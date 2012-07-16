@@ -13,7 +13,6 @@ gem "friendly_id", ">=3.2.1"
 gem "jquery-rails"
 gem "sass"
 gem "picasa"
-gem "twitter"
 
 group :development do
   gem "thin"

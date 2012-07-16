@@ -72,6 +72,7 @@ body {
 
   .follow_us {
     background: $medium_gray;
+    border-radius: 9px;
     color: white;
     display: block;
     font-size: 115%;
@@ -88,13 +89,28 @@ body {
   }
 
   .tweets {
+
+    .tweet_list {
+
+      .tweet_avatar {
+        padding-right: 3em; float: left;
+        img {
+        vertical-align: middle;
+        margin-right: 6px;
+        }
+      }
+
+      li{
+        @include links(#FFF);
+      }
+  }
+
   li {
     background: none;
     border-bottom: 1px dashed;
     list-style-type: none;
     margin: 0;
     padding: 12px;
-    @include links($dark_gray);
 
     .date {
       color: $gray;

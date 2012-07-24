@@ -270,7 +270,7 @@ DEPENDENCIES
   hpricot
   inherited_resources (>= 1.2.2)
   jquery-rails
-  picasa
+  picasa (~> 0.3.0)
   rails (= 3.2.6)
   rails3-generators!
   rails_admin

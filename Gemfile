@@ -12,7 +12,7 @@ gem "formtastic", "~>2.2.1"
 gem "friendly_id", ">=3.2.1"
 gem "jquery-rails"
 gem "sass"
-gem "picasa"
+gem "picasa", "~> 0.3.0"
 
 group :development do
   gem "thin"

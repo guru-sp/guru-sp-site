@@ -33,5 +33,14 @@ feature "Visiting home page", %q{
       page.should have_link "siga o @guru_sp", :href => "http://twitter.com/#!/guru_sp"
     end
   end
+  
+  scenario "sidebar without next meeting" do
+    visit "/"
+    within "#sidebar .meeting" do
+      page.should have_content "Ainda não foi agendado. Aguarde!"
+    end
+  end
+
+  
 end
 

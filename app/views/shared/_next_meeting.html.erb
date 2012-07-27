@@ -1,15 +1,7 @@
 <div class="block notice meeting">
-<h4>Próximo encontro</h4>
-<p>
-  <% if @meeting = Meeting.next_meeting %>
-  <%= link_to @meeting do %>
-    <div class="date"><%= l(@meeting.date, :format => :day_month) %></div>
-    <div class="place">na Caelum</div>
-    <div class="time">às <%= l(@meeting.date, :format => :hour) %></div>
-  <% end %>
-  <% else %>
-  Ainda não foi agendado. Aguarde!
-  <% end %>
-</p>
+  <h4>Próximo encontro</h4>
+  <p>
+    <%= next_meeting_message(@next_meeting) %>
+  </p>
 </div>
 

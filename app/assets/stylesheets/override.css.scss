@@ -33,6 +33,8 @@ body {
     font-family: sans-serif;
 }
 
+
+
 #main .block .content p {
     font-size: 15px;
 }
@@ -123,8 +125,6 @@ body {
     padding-top: 0px;
   }
   }
-
-
 
 .meeting {
   background-color: $guru_red;
@@ -235,18 +235,18 @@ ul.album {
 ul.list{
   li {
     display: block;
-    height: 180px;
     .item {
-      margin-left: 190px;
+
     }
     .left {
       float: left;
       display: block;
       position: relative;
+      margin: 10px;
       .thumbnail {
         width: 160px;
         height: 160px;
       }
     }
   }
-} 
+}

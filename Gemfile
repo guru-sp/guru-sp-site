@@ -13,6 +13,7 @@ gem "friendly_id", ">=3.2.1"
 gem "jquery-rails"
 gem "sass"
 gem "picasa", "~> 0.3.0"
+gem "gravatar_image_tag"
 
 group :development do
   gem "thin"

@@ -242,10 +242,17 @@ ul.list{
       float: left;
       display: block;
       position: relative;
-      margin: 10px;
+      margin: 0 10px;
       .thumbnail {
         width: 160px;
         height: 160px;
+      }
+      .avatar {
+        width: 80px;
+        height: 80px;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
       }
     }
   }

@@ -6,17 +6,15 @@
   <% for user in @users %>
   <li class="user" >
     <div class="left">
-      <img class="avatar" src="assets/avatar.png" alt="avatar">
+      <%= gravatar_image_tag(user.email, :class => "avatar") %>
     </div>
     <div class="item">
-      <h3><%= user.nickname %></h3>
+      <h3><%= user.nickname %> ( <%= user.name %>)
+      <%= link_to "editar" , edit_user_path(user) if user == current_user %>
+      </h3>
       <p>
-      <strong>nome: </strong><%= link_to user.name  %> <br />
       <strong>github: </strong><%= link_to user.github ,"https://github.com/#{user.github}" %> <br />
       <strong>site: </strong><%= link_to user.site %> <br />
-      <% if user == current_user %>
-        (<%= link_to "Editar" , edit_user_path(user) %>)
-      <% end %>
       </p>
     </div>
   </li>

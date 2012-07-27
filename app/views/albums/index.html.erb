@@ -1,11 +1,21 @@
-<h2>Albums</h2>
+<h2>Fotos</h2>
 <div class="inner">
   <p>
-  <ul>
+    Alguns álbuns de fotos de encontros do Guru-SP,
+    da <a href="https://picasaweb.google.com/105291946909431816672">nossa conta no Picasa</a>.
+  </p>
+  <ul class="list">
     <% @albums.each do |album| %>
-      <li><%= link_to album[:title], album_url(:id => album[:id]) %></li>
+      <li>
+        <div class="left">
+          <%= image_tag album[:thumbnail], :alt => album[:title], :class => "thumbnail"  %>
+        </div>
+        <div class="item">
+          <%= link_to album[:title], album_url(:id => album[:id]) %>
+          <p><%= album[:summary] %></p>
+        </div>
+      </li>
     <% end %>
   </ul>
-  </p>
 </div>
 

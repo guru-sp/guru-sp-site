@@ -202,3 +202,51 @@ body {
   width: 600px;
   height: 300px;
 }
+
+.thumbnail {
+  padding: 6px;
+  margin: 2px;
+  background: #FCFCFC;
+  display: block;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.3);
+}
+
+ul.album {
+  margin: 20px;
+  li {
+      display: inline-block;
+      list-style-type: none;
+      padding: 0px;
+      margin: 12px 6px;
+  }
+  a {
+    display: block;
+    -webkit-transition: -webkit-transform .15s linear;
+  }
+  a:hover {
+  -webkit-transform: scale(1.20);
+  -moz-transform: scale(1.20);
+  position: relative;
+  z-index: 5;
+  }
+}
+
+ul.list{
+  li {
+    display: block;
+    height: 180px;
+    .item {
+      margin-left: 190px;
+    }
+    .left {
+      float: left;
+      display: block;
+      position: relative;
+      .thumbnail {
+        width: 160px;
+        height: 160px;
+      }
+    }
+  }
+} 

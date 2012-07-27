@@ -8,12 +8,12 @@ describe Meeting do
 
   describe "#next_meeting" do
     before do
-      Factory(:meeting, :title => "Encontro que já foi", :date => DateTime.now - 57.day)
-      Factory(:meeting, :title => "Encontro daqui 2 meses", :date => DateTime.now + 60.day)
+      FactoryGirl.create(:meeting, :title => "Encontro que já foi", :date => DateTime.now - 57.day)
+      FactoryGirl.create(:meeting, :title => "Encontro daqui 2 meses", :date => DateTime.now + 60.day)
     end
 
     let!(:next_meeting) do
-      Factory(:meeting,:title => "Próximo encontro", :date => DateTime.now + 27.day)
+      FactoryGirl.create(:meeting,:title => "Próximo encontro", :date => DateTime.now + 27.day)
     end
 
     it "returns the nearest meeting from today" do
@@ -26,7 +26,7 @@ describe Meeting do
     let(:album_id) { 123123 }
 
     subject do
-      Factory(:meeting, :album_id => album_id)
+      FactoryGirl.create(:meeting, :album_id => album_id)
     end
 
     context "when an album_id is present" do

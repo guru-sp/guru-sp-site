@@ -10,7 +10,7 @@ feature "Managing Member", %q{
   let(:pass) { "1234567890" }
 
   let(:user) do
-    Factory :user, :password => pass
+    FactoryGirl.create :user, :password => pass
   end
 
   scenario "sign up" do
@@ -75,8 +75,7 @@ feature "Managing Member", %q{
     5.times do |number|
       User.create :email => "user#{number}@wtv.com" , :github => "user_#{number}", :password => "secret", :nickname => "cara_#{number}"
     end
-    visit "/"
-    click_link "Membros"
+    visit "/membros"
     5.times {|number| page.should have_content "cara_#{number}" }
   end
 

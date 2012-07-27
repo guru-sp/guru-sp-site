@@ -10,11 +10,11 @@ feature "Accessing Admin Panel", %q{
   let(:password) { "1234567890" }
 
   let(:admin_user) do
-    Factory :admin, :password => password
+    FactoryGirl.create :admin, :password => password
   end
 
   let(:common_user) do
-    Factory :user, :password => password
+    FactoryGirl.create :user, :password => password
   end
 
   scenario "successful sign in" do

@@ -55,6 +55,11 @@ describe Meeting do
       end
     end
   end
-
+  
+  describe "#venue_name" do
+    it "responds to venue_name" do
+      expect {subject.venue_name}.to_not raise_error NoMethodError
+    end
+  end
 end
 

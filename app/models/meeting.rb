@@ -2,6 +2,7 @@ class Meeting < ActiveRecord::Base
   has_many :talks, :dependent => :destroy
   belongs_to :venue
   validates :title, :presence => true
+  delegate :name, :to => :venue, :allow_nil => true, :prefix => :venue
 
   default_scope order('date ASC')
 

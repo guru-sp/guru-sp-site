@@ -9,8 +9,8 @@
 
   <p id="notice"><%= notice %></p>
 
+  <h3>Descrição</h3>
   <p>
-    <h3>Descrição</h3>
     <%=raw @meeting.description %>
   </p>
   
@@ -28,17 +28,9 @@
   </p>
   <% end %>
 
-  <h3>Fotos</3>
-  <p>
-  <% @meeting.photos.each do |photo| %>
-    <%= link_to photo[:photo] do %>
-      <%= image_tag photo[:thumbnail_2], :alt => photo[:title]  %>
-    <% end %>
-  <% end %>
-  <p>
-
   <p>
     <h3>Palestras</p>
+    
   <p>
 
 </div>

@@ -12,6 +12,8 @@ GuruSpSite::Application.routes.draw do
   resources :users , :path => "membros", :except => [:show]
   resources :albums , :only => [:index, :show]
   resources :meetings, :path => "encontros" , :only => [:index, :show]
+  resources :talks, :path => "palestras" , :only => [:index, :show]
+
 
   root :to => "pages#index"
 

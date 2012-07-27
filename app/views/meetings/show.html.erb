@@ -1,13 +1,10 @@
 <h2><%= @meeting.title %></h2>
 <div class="inner meeting-body">
   <div class="info">
-
     <div class="date"><div class="icon date-icon"></div>
       <h3><%= l(@meeting.date) %></h3>
-	  </div>
-
+    </div>
     <%= render "venue" if @meeting.venue %>
-
   </div>
 
   <p id="notice"><%= notice %></p>
@@ -16,16 +13,20 @@
     <h3>Descrição</h3>
     <%=raw @meeting.description %>
   </p>
-
+  
+  <% if @meeting.agendatech_link.present? %>
   <p>
     <strong>Vai nesse encontro?</strong>
-    <%= link_to "Confirme sua presença no AgendaTech", @meeting.agendatech_link %>
+    <%= link_to "Confirme sua presença pela AgendaTech", @meeting.agendatech_link %>
   </p>
-
+  <% end %>
+  
+  <% if @meeting.call4paperz_link.present? %>
   <p>
     <strong>Quer apresentar algo?</strong>
     <%= link_to "Proponha uma palestra no Call4Paperz", @meeting.call4paperz_link %>
   </p>
+  <% end %>
 
   <h3>Fotos</3>
   <p>

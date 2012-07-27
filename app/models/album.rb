@@ -5,7 +5,7 @@ class Album
   end
 
   def photos
-  	@content[:photos]
+    @content[:photos]
   end
 
   def self.all

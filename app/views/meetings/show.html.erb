@@ -13,25 +13,28 @@
   <p>
     <%=raw @meeting.description %>
   </p>
-  
+
   <% if @meeting.agendatech_link.present? %>
   <p>
     <strong>Vai nesse encontro?</strong>
     <%= link_to "Confirme sua presença pela AgendaTech", @meeting.agendatech_link %>
   </p>
   <% end %>
-  
-  <% if @meeting.call4paperz_link.present? %>
-  <p>
-    <strong>Quer apresentar algo?</strong>
-    <%= link_to "Proponha uma palestra no Call4Paperz", @meeting.call4paperz_link %>
-  </p>
+
+  <h3>Palestras</h3>
+
+  <% if @meeting.talks.empty? %>
+    <p>
+      Nenhuma palestra foi adicionanda ainda.
+    <p>
   <% end %>
 
-  <p>
-    <h3>Palestras</p>
-    
-  <p>
+  <% if @meeting.call4paperz_link.present? %>
+    <p>
+      <strong>Quer apresentar algo?</strong>
+      <%= link_to "Proponha uma palestra no Call4Paperz", @meeting.call4paperz_link %>
+    </p>
+  <% end %>
 
 </div>
 

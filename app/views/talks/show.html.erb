@@ -1,10 +1,4 @@
-<h2><%= @talk.title %></h2>
+<%= render @talk %>
 <div class="inner">
-  <h3><%= @talk.presenter_name %> / @<%= @talk.presenter_twitter %><h3>
-  <div class="video">
-    <%= raw @talk.video_link %>
-  </div>
-  <div class="slides">
-    <%= raw @talk.slides_link %>
-  </div>
+<p>esta palestra foi apresentada no <%= link_to @talk.meeting.title, @talk.meeting %></p>
 </div>

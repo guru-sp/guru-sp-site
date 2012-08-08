@@ -1,0 +1,15 @@
+<h2><%= talk.title %></h2>
+<div class="inner">
+  <h4><%= talk.presenter_name %> |
+    <%= link_to "@#{talk.presenter_twitter}","http://www.twitter.com/#{talk.presenter_twitter}" %>
+  </h4>
+  <div class="video">
+    <%= raw talk.video_link %>
+  </div>
+  <div class="slides">
+    <%= raw talk.slides_link %>
+  </div>
+  <div class="description">
+    <p><%= raw talk.description %></p>
+  </div>
+</div>

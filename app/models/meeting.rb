@@ -9,6 +9,13 @@ class Meeting < ActiveRecord::Base
   def self.next_meeting
     self.where("date >= ?", Date.today).order('date ASC').first
   end
+  
+  def self.from_year(year)
+    start_date = DateTime.new(year)
+    end_date = start_date.end_of_year
+    
+    self.where(:date => (start_date..end_date))
+  end
 
   def photos
     if self.album_id.present?

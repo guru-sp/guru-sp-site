@@ -20,6 +20,20 @@ describe Meeting do
       described_class.next_meeting.should == next_meeting
     end
   end
+  
+  describe "#from_year" do
+    let(:year) { 1945 }
+    let(:meetings) { ["one", "two"]}
+    
+    it "finds the meetings with date between the first and last day of the given year and returns it" do
+      beginning_of_year = DateTime.new(year,1,1,0,0,0)
+      end_of_year = DateTime.new(year,12,31,23,59,59)
+      
+      described_class.should_receive(:where).with(:date => (beginning_of_year..end_of_year)).and_return(meetings)
+      
+      described_class.from_year(year).should == meetings
+    end
+  end
 
   describe ".photos" do
 

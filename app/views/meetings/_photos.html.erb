@@ -1,0 +1,12 @@
+<ul class="album">
+<% if photos.empty? %>
+ <p>Esse encontro não tem nenhuma foto</p>
+<% end %>
+<% photos.each do |photo| %>
+  <li>
+  <%= link_to photo[:photo] do %>
+    <%= image_tag photo[:thumbnail_2], :alt => photo[:title], :class => "thumbnail"  %>
+  <% end %>
+  </li>
+<% end %>
+</ul>

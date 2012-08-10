@@ -2,14 +2,14 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 pt-BR:
-  home:
-    name: "início"
   views:
     pagination:
       previous: "&laquo; Anterior"
       next: "Próximo &raquo;"
       truncate: "…"
   admin:
+      home:
+        name: "Início"
       misc:
         filter_date_format: "dd/mm/yy" # a combination of 'dd', 'mm' and 'yy' with any delimiter. No other interpolation will be done!
         search: "Buscar"

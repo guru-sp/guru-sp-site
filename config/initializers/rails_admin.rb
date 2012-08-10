@@ -7,8 +7,10 @@ RailsAdmin.config do |config|
     list do
       field :title
       field :date
+      field :visible
     end
     edit do
+      field :visible
       field :title
       field :date
       field :description

@@ -6,6 +6,16 @@ describe Meeting do
   it { should have_many :talks }
   it { should belong_to :venue }
 
+
+  describe "scopes" do
+    describe "visible" do
+      it "returns meetings with visible attributes set to true" do
+        subject.update_attribute(:visible, true)
+        described_class.visible.should include(subject)
+      end
+    end
+  end
+
   describe "#next_meeting" do
     before do
       FactoryGirl.create(:meeting, :title => "Encontro que já foi", :date => DateTime.now - 57.day)
@@ -20,17 +30,17 @@ describe Meeting do
       described_class.next_meeting.should == next_meeting
     end
   end
-  
+
   describe "#from_year" do
     let(:year) { 1945 }
     let(:meetings) { ["one", "two"]}
-    
+
     it "finds the meetings with date between the first and last day of the given year and returns it" do
       beginning_of_year = DateTime.new(year,1,1,0,0,0)
       end_of_year = DateTime.new(year,12,31,23,59,59)
-      
+
       described_class.should_receive(:where).with(:date => (beginning_of_year..end_of_year)).and_return(meetings)
-      
+
       described_class.from_year(year).should == meetings
     end
   end
@@ -69,7 +79,7 @@ describe Meeting do
       end
     end
   end
-  
+
   describe "#venue_name" do
     it "responds to venue_name" do
       expect {subject.venue_name}.to_not raise_error NoMethodError

@@ -14,15 +14,20 @@ describe MeetingsController do
         Meeting.should_receive(:from_year).with(DateTime.now.year)
         get :index
       end
+
+    it "gets all visible meetings" do
+        Meeting.should_receive(:visible).and_return(mock.as_null_object)
+        get :index
+      end
     end
-    
+
     context "when a year is passed" do
       it "gets all meetings from the current year" do
         Meeting.should_receive(:from_year).with(2012)
         get :index, :ano => "2012"
       end
     end
-    
+
     it "assigns meetings from current year as @meetings" do
       Meeting.stub(:from_year).and_return([meeting])
       get :index

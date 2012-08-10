@@ -20,6 +20,8 @@
         description: "Descrição"
         date: "Data"
         talks: "Palestras"
+        venue: "Local"
+        visible: "Visível"
       talk:
         title: "Título"
         description: "Descrição"

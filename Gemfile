@@ -41,6 +41,7 @@ end
 
 
 group :production do
+  gem "passenger", "~>3.0.15"
 end
 
 group :devise do

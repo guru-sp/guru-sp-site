@@ -39,11 +39,6 @@ group :test do
   gem 'simplecov', '>= 0.4.2', :require => false
 end
 
-
-group :production do
-  gem "passenger", "~>3.0.15"
-end
-
 group :devise do
   gem "ruby_parser"
   gem "hpricot"

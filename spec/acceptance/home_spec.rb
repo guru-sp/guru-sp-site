@@ -15,7 +15,7 @@ feature "Visiting home page", %q{
 
   scenario "IRC channel" do
     visit "/"
-    page.should have_link "entre no nosso canal do IRC", :href => "/canal-irc"
+    page.should have_link "nosso canal de IRC", :href => "/canal-irc"
   end
 
   scenario "main navigation" do
@@ -33,7 +33,7 @@ feature "Visiting home page", %q{
       page.should have_link "siga o @guru_sp", :href => "http://twitter.com/#!/guru_sp"
     end
   end
-  
+
   scenario "sidebar without next meeting" do
     visit "/"
     within "#sidebar .meeting" do
@@ -41,6 +41,6 @@ feature "Visiting home page", %q{
     end
   end
 
-  
+
 end
 

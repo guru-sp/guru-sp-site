@@ -34,10 +34,16 @@ body {
     background: url('/assets/white_carbon_bg.png') repeat;
 }
 
-#main .block .content p {
-    font-size: 15px;
+h3 {
+  padding-top: 12px;
+  line-height: 160%;
+  margin: 0;
 }
 
+#main .block .content p {
+  font-size: 15px;
+  margin: 6px 0px;
+}
 
 .inner {
   ul {
@@ -90,9 +96,7 @@ body {
   }
 
   .tweets {
-
     .tweet_list {
-
       .tweet_avatar {
         padding-right: 3em; float: left;
         img {
@@ -118,12 +122,12 @@ body {
       padding-top: 4px;
     }
 
-    }
+  }
 
   li:first-child {
     padding-top: 0px;
   }
-  }
+}
 
 .meeting {
   background-color: $guru_red;
@@ -154,7 +158,6 @@ body {
   }
 }
 
-/*start meeting*/
 .meeting-body {
   .place, .date {
     font-family: Verdana, sans-serif;

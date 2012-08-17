@@ -21,7 +21,7 @@
         <ul class="wat-cf">
           <% if user_signed_in? %>
           <li><%= link_to t("web-app-theme.profile"), edit_user_registration_path %></a></li>
-          <li><%= link_to t("web-app-theme.logout"), destroy_user_session_path %></a></li>
+          <li><%= link_to t("web-app-theme.logout"), destroy_user_session_path, :method => :delete %></a></li>
           <% else %>
           <li><%= link_to "Registrar-se", new_user_registration_path %></li>
           <li><%= link_to "Login", new_user_session_path %></li>

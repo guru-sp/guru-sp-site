@@ -6,9 +6,8 @@ GuruSpSite::Application.routes.draw do
 
   match "sobre" => "pages#sobre", :as => :about
   match "canal-irc" => "pages#irc", :as => :irc
-
-  devise_for :users
-
+  
+  devise_for :users, :path => "membros"
   resources :users , :path => "membros", :except => [:show]
   resources :albums , :only => [:index, :show]
   resources :meetings, :path => "encontros" , :only => [:index, :show]

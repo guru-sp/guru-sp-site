@@ -3,9 +3,10 @@ class MeetingsController < InheritedResources::Base
   actions :index, :show
 
   def index
-    year = params[:ano].present? ? params[:ano].to_i : DateTime.now.year
+    @current_year = DateTime.now.year
+    @year = params[:ano].present? ? params[:ano].to_i : @current_year
 
-    @meetings = Meeting.visible.from_year(year)
+    @meetings = Meeting.visible.from_year(@year)
   end
 end
 

@@ -9,7 +9,12 @@
   Divulgamos nossos encontros na <%= link_to "Agendatech", "http://agendatech.com.br" %> e geralmente a sumbissão de propostas de palestras é feita através do <%= link_to "Call4Paperz", "http://call4paperz.com" %>, duas ferramentas criadas pela comunidade.
 </p>
 
-<p>Veja aqui o que aconteceu nos últimos encontros.</p>
+<ul class="years">
+  <% 2008.upto(@current_year) do |year| %>
+    <li><%= link_to_unless_current year, meetings_path(:ano => year) %></li>
+  <% end %>
+</ul>
+
 <ul class="list">
   <% for meeting in @meetings %>
   <li>
@@ -24,5 +29,10 @@
   </li>
   <% end %>
 </ul>
+
+<% if @meetings.empty? %>
+  <p class="none">Nenhum encontro em <%= content_tag(:strong,@year) %>.</p>
+<% end %>
+
 </div>
 

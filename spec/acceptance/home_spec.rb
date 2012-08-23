@@ -36,7 +36,7 @@ feature "Visiting home page", %q{
 
   scenario "sidebar without next meeting" do
     visit "/"
-    within "#sidebar .meeting" do
+    within "#sidebar .next_meeting" do
       page.should have_content "Ainda não foi agendado. Aguarde!"
     end
   end

@@ -10,7 +10,7 @@
         <div class="left">
           <%= image_tag album[:thumbnail], :alt => album[:title], :class => "thumbnail"  %>
         </div>
-        <div class="item">
+        <div class="item description">
           <%= link_to album[:title], album_url(:id => album[:id]) %>
           <p><%= album[:summary] %></p>
         </div>

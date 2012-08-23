@@ -29,9 +29,9 @@ $gray: #c0c0c0;
 @include links($guru_red);
 
 body {
-    font-size: 15px;
-    font-family: sans-serif;
-    background: url('/assets/white_carbon_bg.png') repeat;
+  font-size: 15px;
+  font-family: sans-serif;
+  background: url('/assets/white_carbon_bg.png') repeat;
 }
 
 h3 {
@@ -108,67 +108,68 @@ h3 {
       li{
         @include links(#FFF);
       }
-  }
-
-  li {
-    background: none;
-    border-bottom: 1px dashed;
-    list-style-type: none;
-    margin: 0;
-    padding: 12px;
-
-    .date {
-      color: $gray;
-      padding-top: 4px;
     }
 
+    li {
+      background: none;
+      border-bottom: 1px dashed;
+      list-style-type: none;
+      margin: 0;
+      padding: 12px;
+
+      .date {
+        color: $gray;
+        padding-top: 4px;
+      }
+
+    }
+
+    li:first-child {
+      padding-top: 0px;
+    }
   }
 
-  li:first-child {
-    padding-top: 0px;
-  }
-}
+  .next_meeting {
+    background-color: $guru_red;
+    background-image: none;
 
-.meeting {
-  background-color: $guru_red;
-  background-image: none;
+    a:link, a:hover, a:active, a:visited {
+      color: white;
+       text-decoration: none;
+    }
 
-  a:link, a:hover, a:active, a:visited {
-    color: white;
-     text-decoration: none;
-  }
+    .date {
+      font-size: 400%;
+      width: 100%;
+      text-align: center;
+    }
 
-  .date {
-    font-size: 400%;
-    width: 100%;
-    text-align: center;
-  }
+    .venue {
+      font-size: 150%;
+      text-align: center;
+    }
 
-  .place {
-    font-size: 150%;
-    text-align: center;
-  }
-
-  .time {
-    padding-top: 6px;
-    font-size: 110%;
-    text-align: center;
-  }
+    .time {
+      padding-top: 6px;
+      font-size: 110%;
+      text-align: center;
+    }
 
   }
 }
 
 .meeting-body {
-  .place, .date {
+  .venue, .date {
     font-family: Verdana, sans-serif;
-    font-size: 150%;
+    font-size: 100%;
     margin: 4px 0px 6px 0px;
     padding: 4px 0px 4px 0px;
     color: $medium_gray;
     h3 {
       vertical-align: top;
       display: inline-block;
-      margin: 2px 0 0 0;
+      padding: 0;
+      margin: 0;
     }
   }
   .icon {
@@ -237,8 +238,8 @@ ul.album {
 ul.list{
   li {
     display: block;
-    .item {
-
+    .description {
+      height: 200px;
     }
     .left {
       float: left;
@@ -258,4 +259,20 @@ ul.list{
       }
     }
   }
+}
+
+  ul.years {
+  width: 100%;
+  display: block;
+  list-style-type: none;
+  margin: 18px;
+  li {
+    display: inline-block;
+    font-size: 125%;
+    margin-left: 6px;
+  }
+}
+
+.none {
+  padding: 18px;
 }

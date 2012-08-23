@@ -85,5 +85,12 @@ describe Meeting do
       expect {subject.venue_name}.to_not raise_error NoMethodError
     end
   end
+
+  describe "#album_id_enum" do
+    it "calls Album.all_with_title_and_id and returns it" do
+      Album.should_receive(:all_with_title_and_id).and_return({:a => :b})
+      subject.album_id_enum.should == {:a => :b}
+    end
+  end
 end
 

@@ -26,5 +26,9 @@ class Meeting < ActiveRecord::Base
       []
     end
   end
+
+  def album_id_enum
+    Album.all_with_title_and_id
+  end
 end
 

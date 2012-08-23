@@ -12,9 +12,9 @@
   <h3>Descrição</h3>
   <p>
     <% if @meeting.description.present? %>
-      <%= raw @meeting.description %>
+      <%= simple_format @meeting.description %>
     <% else %>
-      Nenhuma descrição foi adicionada a esse encontro.
+      Nenhuma descrição foi adicionada até agora.
     <% end %>
   </p>
 
@@ -24,7 +24,7 @@
     <%= link_to "Confirme sua presença pela AgendaTech", @meeting.agendatech_link %>
   </p>
   <% end %>
-  
+
   <% if @meeting.call4paperz_link.present? %>
     <p>
       <strong>Quer apresentar algo?</strong>
@@ -38,7 +38,7 @@
   <% else %>
     <p>Nenhuma palestra foi adicionanda ainda.</p>
   <% end %>
-  
+
   <h3>Fotos</h3>
     <%= render "photos", :photos => @meeting.photos %>
 </div>

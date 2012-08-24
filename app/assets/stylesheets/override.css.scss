@@ -276,3 +276,10 @@ ul.list{
 .none {
   padding: 18px;
 }
+
+.video, .slides {
+  display: inline-block;
+  position: relative;
+  margin: 6px;
+  vertical-align: top;
+}

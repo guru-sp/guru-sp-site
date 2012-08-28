@@ -2,11 +2,11 @@
 "pt-BR":
   activerecord:
     models:
-      user: "Usuários"
-      meeting: "Encontros"
-      talk: "Palestras"
-      venue: "Locais"
-      sponsor: "Patrocinadores"
+      user: "Usuário"
+      meeting: "Encontro"
+      talk: "Palestra"
+      venue: "Local"
+      sponsor: "Patrocinador"
     attributes:
       user:
         password: "Senha"

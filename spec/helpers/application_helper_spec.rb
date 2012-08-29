@@ -33,10 +33,10 @@ describe ApplicationHelper do
         helper.next_meeting_message(meeting)
       end
       
-      it "returns a html with the meeting date (DD/MM), venue name and time (HH:MM) and a link to the meeting" do
+      it "returns a html with the meeting date (DD/MM), venue name and time (HH:MM) and a link to the meeting with its slug" do
         meeting.stub(:venue_name).and_return(venue_name)
         
-        html_meeting =  "<a href=\"/encontros/#{meeting.id}\">" +
+        html_meeting =  "<a href=\"/encontros/#{meeting.slug}\">" +
                         "<div class=\"date\">#{date.strftime("%d/%m")}</div>" +
                         "<div class=\"place\">local: #{venue_name}</div>" +
                         "<div class=\"time\">às #{date.strftime("%H:%M")} hs</div>" +

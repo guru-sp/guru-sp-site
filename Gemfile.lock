@@ -272,7 +272,7 @@ DEPENDENCIES
   execjs
   factory_girl_rails
   formtastic (~> 2.2.1)
-  friendly_id (>= 3.2.1)
+  friendly_id (~> 4.0.1)
   gravatar_image_tag
   guard
   guard-livereload

@@ -1,7 +1,6 @@
 <h2><%= talk.title %></h2>
 <div class="inner">
-  <h4><%= talk.presenter_name %> |
-    <%= link_to "@#{talk.presenter_twitter}","http://www.twitter.com/#{talk.presenter_twitter}" %>
+  <h4><%= talk.presenter_name %> <%= link_to "@#{talk.presenter_twitter}","http://www.twitter.com/#{talk.presenter_twitter}" if talk.presenter_twitter.present? %>
   </h4>
   <div class="video">
     <%= raw talk.video_link %>

@@ -38,7 +38,7 @@ describe ApplicationHelper do
         
         html_meeting =  "<a href=\"/encontros/#{meeting.slug}\">" +
                         "<div class=\"date\">#{date.strftime("%d/%m")}</div>" +
-                        "<div class=\"place\">local: #{venue_name}</div>" +
+                        "<div class=\"venue\">local: #{venue_name}</div>" +
                         "<div class=\"time\">às #{date.strftime("%H:%M")} hs</div>" +
                         "</a>"
         helper.next_meeting_message(meeting).should == html_meeting

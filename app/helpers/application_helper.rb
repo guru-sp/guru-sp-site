@@ -6,7 +6,7 @@ module ApplicationHelper
       date = meeting.date
       link_to meeting do
         content_tag(:div, l(date, :format => :day_month), :class => "date") +
-        content_tag(:div, "local: #{meeting.venue_name}", :class => "place") +
+        content_tag(:div, "local: #{meeting.venue_name}", :class => "venue") +
         content_tag(:div, "às #{l(date, :format => :hour)}", :class => "time")
       end
     else

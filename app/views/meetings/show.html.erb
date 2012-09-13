@@ -14,7 +14,7 @@
     <% if @meeting.description.present? %>
       <%= simple_format @meeting.description %>
     <% else %>
-      Nenhuma descrição foi adicionada até agora.
+      Nenhuma descrição foi adicionada.
     <% end %>
   </p>
 
@@ -31,7 +31,7 @@
   <% if @meeting.talks.present? %>
     <%= render @meeting.talks, :as => :talk %>
   <% else %>
-    <p>Nenhuma palestra foi adicionanda ainda.</p>
+    <p>Nenhuma palestra foi adicionada ainda.</p>
   <% end %>
 
   <h3>Fotos</h3>

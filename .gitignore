@@ -1,5 +1,6 @@
 log/*
 tmp/*
+*.swp
 db/*.sqlite3
 coverage
 solr

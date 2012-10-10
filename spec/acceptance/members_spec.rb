@@ -45,7 +45,7 @@ feature "Managing Member", %q{
     end
   end
 
-  scenario "edit profile" do
+  scenario "edit profile from 'Perfil' link" do
     login_with(user.email, pass)
     click_link "Perfil"
     fill_in "Github", :with => "torvalds"
@@ -70,13 +70,24 @@ feature "Managing Member", %q{
       page.should have_content "Seu perfil foi atualizado com sucesso."
     end
   end
-
-  scenario "list members" do
+  
+  
+  background do
     5.times do |number|
-      User.create :email => "user#{number}@wtv.com" , :github => "user_#{number}", :password => "secret", :nickname => "cara_#{number}"
+      User.create(:email => "user#{number}@wtv.com",
+                  :github => "user_#{number}",
+                  :password => "secret",
+                  :name => "Fulano #{number}",
+                  :nickname => "cara_#{number}",
+                  :site => "http://www.example_#{number}.com")
     end
+  end
+  
+  scenario "listing members nicknames and full names" do
     visit "/membros"
-    5.times {|number| page.should have_content "cara_#{number}" }
+    5.times do |number|
+      page.should have_content "cara_#{number} (Fulano #{number})"
+    end
   end
 
 end

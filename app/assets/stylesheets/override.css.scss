@@ -240,11 +240,15 @@ ul.list{
     .description {
       height: 200px;
     }
+    .item {
+      overflow: hidden;
+    }
     .left {
       float: left;
       display: block;
+      display: inline-block;
       position: relative;
-      margin: 0 10px;
+      margin: 2px 8px;
       .thumbnail {
         width: 160px;
         height: 160px;
@@ -281,4 +285,9 @@ ul.list{
   position: relative;
   margin: 6px;
   vertical-align: top;
+}
+
+ul.list .user h3 {
+  padding: 0;
+  margin: 0;
 }

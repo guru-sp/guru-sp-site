@@ -23,7 +23,6 @@ feature "Visiting home page", %q{
     within "#main-navigation" do
       page.should have_link "Encontros", :href => "/encontros"
       page.should have_link "Sobre", :href => "/sobre"
-      #page.should have_link "Membros", :href => "/membros"
     end
   end
 

@@ -1,5 +1,7 @@
 GuruSpSite::Application.routes.draw do
 
+  mount Rich::Engine => '/rich', :as => 'rich'
+
   get "pages/index"
   get "pages/sobre"
   get "pages/irc"

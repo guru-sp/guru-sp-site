@@ -14,6 +14,7 @@ gem "jquery-rails"
 gem "sass"
 gem "picasa", "~> 0.3.0"
 gem "gravatar_image_tag"
+gem "rich"
 
 group :development do
   gem "thin"

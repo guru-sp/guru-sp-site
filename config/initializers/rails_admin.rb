@@ -13,7 +13,9 @@ RailsAdmin.config do |config|
       field :visible
       field :title
       field :date
-      field :description
+      field :description, :rich_editor do
+        config({:insert_many => true})
+      end
       field :venue
       field :agendatech_link
       field :call4paperz_link

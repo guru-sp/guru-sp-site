@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :sponsor, :class => 'Sponsors' do
-    name "MyString"
-    url "MyString"
+    name "Caelum"
+    url "http://www.caelum.com.br"
   end
 end

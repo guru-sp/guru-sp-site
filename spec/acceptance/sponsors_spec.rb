@@ -7,10 +7,8 @@ feature "Navigating Sponsors", %q{
   I want to see a list of all sponsors with their names and sites
 } do
 
-  scenario "google group discussion list" do
-    #visit "/"
-    #click_link "Patrocinadores"
-    #page.should have_content "Obrigado!"
+  scenario "visiting sponsors page" do
+    pending
   end
 
 end

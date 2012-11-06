@@ -11,7 +11,7 @@
   <div id="container">
     <div id="header">
       <%= image_tag("logo-guru.png", :size => "83x60", :alt => "GURU-SP - logo", :id => "logo") %>
-      <h1><a href="/" alt="voltar para página inicial">GURU SP</a></h1>
+      <h1><%= link_to_unless_current("GURU SP", "/") %></h1>
       <div id="main-navigation">
         <ul class="wat-cf">
           <li><%= link_to "Encontros", meetings_path, :alt => "Encontros presenciais do GURU-SP" %></li>

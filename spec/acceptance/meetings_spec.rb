@@ -13,8 +13,17 @@ feature "Navigating Meetings", %q{
   
   background "given that there is a visible meeting hapenning this year" do
     FactoryGirl.create :meeting, :title => "Encontro 99",
-                       :date => Time.new(2012,11,10,9),
+                       :description => "<strong>Amazing</strong>",
+                       :date => DateTime.new(2012,11,10,9),
                        :visible => true
+  end
+  
+  scenario "listing meetings" do
+    visit "/"
+    click_link "Encontros"
+    within ".list .item" do
+      page.should have_content "Amazing"
+    end
   end
   
   scenario "checking a meeting in meetings page" do

@@ -23,8 +23,7 @@
     </div>
     <div class="item">
       <h3><%= link_to meeting.title, meeting_path(meeting) %></h3>
-      <div class="date"><div class="icon date-icon"></div><%= meeting.description %></div>
-      </p>
+      <div><%= sanitize meeting.description %></div>
     </div>
   </li>
   <% end %>

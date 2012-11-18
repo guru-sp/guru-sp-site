@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem "rails", "=3.2.8"
+gem "rails", "=3.2.9"
 
 gem "sqlite3-ruby"
 gem "therubyracer"
@@ -9,7 +9,7 @@ gem "rails_admin"
 gem "inherited_resources", ">=1.2.2"
 gem "devise", ">=1.4.3"
 gem "formtastic", "~>2.2.1"
-gem "friendly_id", "~> 4.0.1"
+gem "friendly_id", "~> 4.0.9"
 gem "jquery-rails"
 gem "sass"
 gem "picasa", "~> 0.3.0"

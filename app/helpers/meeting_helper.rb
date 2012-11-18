@@ -7,7 +7,7 @@ module MeetingHelper
         content_tag(:strong, "Vai nesse encontro?") + " " +
         link_to("Confirme sua presença pela AgendaTech", agendatech_link)
       else
-        link_to "Veja quem confirmou presença nesse encontro pela AgendaTech", agendatech_link
+        link_to("Veja quem confirmou presença nesse encontro pela AgendaTech", agendatech_link)
       end
     end
   end

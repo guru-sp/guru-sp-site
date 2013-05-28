@@ -4,6 +4,7 @@ db/*.sqlite3
 coverage
 solr
 public/cache
+public/system
 doc/specs.html
 doc/features.html
 tags
@@ -18,6 +19,6 @@ spec/requests
 spec/routing
 spec/views
 capybara*
-.rvmrc
+.ruby-version
 public/stylesheets
 .sass-cache/*

@@ -4,7 +4,7 @@
   <title>Grupo de Usuários Ruby de SP | GURU-SP</title>
   <%= favicon_link_tag "favicon-guru.png", :type => "image/png" %>
   <%= stylesheet_link_tag "application" %>
-  <%= javascript_include_tag "application" %>
+  <%= yield :stylesheets %>
   <%= csrf_meta_tag %>
 </head>
 <body>
@@ -62,6 +62,7 @@
     </div>
   </div>
 </body>
+<%= javascript_include_tag "application" %>
 <%= yield :javascripts %>
 <%= render "shared/analytics" %>
 </html>

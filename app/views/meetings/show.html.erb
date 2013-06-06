@@ -34,7 +34,10 @@
     <p>Nenhuma palestra foi adicionada.</p>
   <% end %>
 
-  <h3>Fotos</h3>
-  <%= render "photos", :photos => @meeting.photos %>
+  <% if @meeting.album.present? %>
+    <h3>Fotos</h3>
+    <%= render "photos", :photos => @meeting.photos %>
+    <%= link_to "Ver slideshow no Picasa", @meeting.slideshow %>
+  <% end %>
 </div>
 

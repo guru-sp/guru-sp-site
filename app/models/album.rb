@@ -1,4 +1,5 @@
 class Album
+  attr_reader :content
 
   def self.all
     Picasa.albums
@@ -17,6 +18,10 @@ class Album
 
   def photos
     @content[:photos] || []
+  end
+
+  def slideshow
+    @content[:slideshow]
   end
 
 end

@@ -2,6 +2,9 @@
 require 'spec_helper'
 
 describe Meeting do
+
+  let(:album_id) { 123123 }
+
   it { should validate_presence_of :title }
   it { should have_many :talks }
   it { should belong_to :venue }
@@ -45,10 +48,31 @@ describe Meeting do
     end
   end
 
-  describe ".photos" do
+  describe "#album" do
+    context 'when album id is present' do
+      subject do
+        FactoryGirl.create(:meeting, :album_id => album_id)
+      end
 
-    let(:album_id) { 123123 }
+      it 'creates a new album wit the album aid' do
+        album = double(:album)
+        Album.should_receive(:new).with(album_id).and_return(album)
+        subject.album.should == album
+      end
+    end
 
+    context 'when album id is not present' do
+      subject do
+        FactoryGirl.create(:meeting, :album_id => nil)
+      end
+
+      it 'returns nil' do
+        subject.album.should be_nil
+      end
+    end
+  end
+
+  describe "#photos" do
     subject do
       FactoryGirl.create(:meeting, :album_id => album_id)
     end
@@ -92,5 +116,25 @@ describe Meeting do
       subject.album_id_enum.should == {:a => :b}
     end
   end
+
+  describe 'photos' do
+    context 'when album is nil' do
+      it 'should be empty' do
+        subject.should_receive(:album).and_return(nil)
+        subject.photos.should be_empty
+      end
+    end
+
+    context 'when album is present' do
+      it 'returns its photos' do
+        photos = [1,2,3]
+        album = double(:album, :photos => photos )
+        subject.should_receive(:album).and_return(album)
+        subject.photos.should == photos
+      end
+    end
+
+  end
+
 end
 

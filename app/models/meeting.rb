@@ -1,7 +1,7 @@
 class Meeting < ActiveRecord::Base
   extend FriendlyId
   friendly_id :title, :use => :slugged
-  
+
   has_many :talks, :dependent => :destroy
   belongs_to :venue
   validates :title, :presence => true
@@ -22,16 +22,21 @@ class Meeting < ActiveRecord::Base
     self.where(:date => (start_date..end_date))
   end
 
-  def photos
-    if self.album_id.present?
-      Album.new(self.album_id).photos
-    else
-      []
-    end
+  def album
+    (@album ||= Album.new(album_id)) if album_id.present?
   end
 
   def album_id_enum
     Album.all_with_title_and_id
   end
+
+  def slideshow
+    album.slideshow
+  end
+
+  def photos
+    album.try(:photos) || []
+  end
+
 end
 

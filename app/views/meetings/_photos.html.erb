@@ -1,11 +1,16 @@
+<%= content_for :javascripts do %>
+  <%= javascript_include_tag "lightbox" %>
+<% end %>
+
 <% if photos.empty? %>
  <p>Esse encontro não tem fotos.</p>
 <% end %>
+
 <ul class="album">
 <% photos.each do |photo| %>
   <li>
-  <%= link_to photo[:photo] do %>
-    <%= image_tag photo[:thumbnail_2], :alt => photo[:title], :class => "thumbnail"  %>
+  <%= link_to photo[:photo], :rel => "lightbox[album]" do %>
+    <%= image_tag photo[:thumbnail_2], :alt => photo[:title], :class => "thumbnail" %>
   <% end %>
   </li>
 <% end %>

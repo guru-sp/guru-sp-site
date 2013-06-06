@@ -4,8 +4,15 @@ describe Album do
 
   let(:valid_album_id) { 5680035898646145473 }
 
-  let(:subject) do
-    described_class.new(valid_album_id)
+  let(:photos) { [1, 2, 3] }
+
+  let(:content) do
+    { :photos => photos, :slideshow => 'slideshowURL' }
+  end
+
+  subject do
+    Picasa.stub(:photos).and_return(content)
+    described_class.new(anything)
   end
 
   context ".all" do
@@ -47,11 +54,22 @@ describe Album do
       Picasa.should_receive(:photos).with(:album_id => valid_album_id)
       described_class.new(valid_album_id)
     end
+
+    it 'sets the album content' do
+      Picasa.stub(:photos).and_return(content)
+      described_class.new(anything).content.should == content
+    end
   end
 
   context "#photos" do
-    it "returns a list of photos" do
-      subject.photos.should be_an_instance_of(Array)
+    it "returns a list of photos from the album content" do
+      subject.photos.should == photos
+    end
+  end
+
+  context "#slideshow" do
+    it "gets the slideshow from the album content" do
+      subject.slideshow.should == 'slideshowURL'
     end
   end
 

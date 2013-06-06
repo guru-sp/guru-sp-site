@@ -123,7 +123,7 @@ GEM
     haml (4.0.3)
       tilt
     has_scope (0.5.1)
-    hike (1.2.2)
+    hike (1.2.3)
     hpricot (0.8.6)
     http_parser.rb (0.5.3)
     i18n (0.6.1)
@@ -131,7 +131,7 @@ GEM
       has_scope (~> 0.5.0)
       responders (~> 0.9)
     journey (1.0.4)
-    jquery-rails (2.2.1)
+    jquery-rails (2.1.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (3.0.1)
@@ -155,7 +155,7 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.1)
     mime-types (1.23)
-    multi_json (1.7.4)
+    multi_json (1.7.6)
     nested_form (0.3.2)
     nokogiri (1.5.9)
     orm_adapter (0.4.0)
@@ -323,7 +323,7 @@ DEPENDENCIES
   guard-rspec
   hpricot
   inherited_resources (>= 1.2.2)
-  jquery-rails
+  jquery-rails (~> 2.1.4)
   picasa (~> 0.3.0)
   rails (= 3.2.13)
   rails3-generators!

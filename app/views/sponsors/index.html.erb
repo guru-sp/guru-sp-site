@@ -4,9 +4,17 @@
   <p>As empresas e organizações aqui listadas tornaram nossos encontros possíveis seja disponibilizando
   local adequado, infra-estrutura ou alimentação para os participantes.</p>
 
-  <p><strong>Obrigado!</strong></p>
+  <p>
+    <strong>Obrigado!</strong>
+  </p>
 
-  <ul>
+  <p>
+    Se você ou sua empresa gostaria de coloborar com nossos encontros presenciais, seja
+    disponibilizando espaço, coffe-break ou oferecendo algum tipo de brinde para os participantes
+    envie um e-mail para <strong>staff at gurusp.org</strong> com sua proposta de patrocínio.
+  </p>
+
+  <ul class="sponsors">
     <% for sponsor in @sponsors %>
       <li><%= link_to sponsor.name, sponsor.url %></li>
     <% end %>

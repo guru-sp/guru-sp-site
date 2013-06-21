@@ -15,7 +15,7 @@ feature "Visiting home page", %q{
 
   scenario "IRC channel" do
     visit "/"
-    page.should have_link "nosso canal de IRC", :href => "/canal-irc"
+    page.should have_link "Nosso canal de IRC", :href => "/canal-irc"
   end
 
   scenario "main navigation" do

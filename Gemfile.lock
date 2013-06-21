@@ -58,6 +58,9 @@ GEM
     capybara-webkit (0.13.0)
       capybara (>= 1.0.0, < 1.2)
       json
+    carrierwave (0.8.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
     childprocess (0.3.9)
       ffi (~> 1.0, >= 1.0.11)
     climate_control (0.0.3)
@@ -310,6 +313,7 @@ PLATFORMS
 DEPENDENCIES
   capybara (~> 1.1.2)
   capybara-webkit
+  carrierwave
   database_cleaner (~> 0.7)
   devise (>= 1.4.3)
   evergreen

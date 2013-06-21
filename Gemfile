@@ -15,6 +15,7 @@ gem "sass"
 gem "picasa", "~> 0.3.0"
 gem "gravatar_image_tag"
 gem "rich"
+gem "carrierwave"
 
 group :development do
   gem "thin"

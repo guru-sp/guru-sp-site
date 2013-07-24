@@ -7,6 +7,7 @@ describe Meeting do
 
   it { should validate_presence_of :title }
   it { should have_many :talks }
+  it { should have_and_belong_to_many :sponsors }
   it { should belong_to :venue }
 
 

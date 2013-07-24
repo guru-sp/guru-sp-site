@@ -22,6 +22,8 @@ RailsAdmin.config do |config|
       field :album_id
       field :talks do
       end
+      field :sponsors do
+      end
     end
   end
 

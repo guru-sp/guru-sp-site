@@ -7,7 +7,7 @@ feature "Navigating Sponsors", %q{
   I want to see a list of all sponsors with their names and sites
 } do
 
-  scenario "visiting sponsors page" do
+  scenario "visiting meeting page" do
     pending
   end
 

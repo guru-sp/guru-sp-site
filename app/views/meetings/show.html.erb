@@ -18,6 +18,14 @@
     <% end %>
   </p>
 
+  <h3>Patrocinadores</h3>
+  <ul class="sponsors">
+  <% @meeting.sponsors.each do |sponsor| %>
+    <li><%= link_to sponsor.name, sponsor.url %></li>
+  <% end %>
+  </ul>
+
+
   <p><%= agendatech_link_message @meeting.agendatech_link, @meeting.date %></p>
 
   <% if @meeting.call4paperz_link.present? %>

@@ -3,6 +3,7 @@ class Meeting < ActiveRecord::Base
   friendly_id :title, :use => :slugged
 
   has_many :talks, :dependent => :destroy
+  has_and_belongs_to_many :sponsors
   belongs_to :venue
   validates :title, :presence => true
   delegate :name, :to => :venue, :allow_nil => true, :prefix => :venue

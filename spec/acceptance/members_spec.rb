@@ -41,7 +41,7 @@ feature "Managing Member", %q{
   scenario "sign up with wrong password" do
     login_with(user.email, "wrongpassword")
     within ".flash" do
-      page.should have_content "Email ou senha inválidos."
+      page.should have_content "Email ou senha inválido."
     end
   end
 

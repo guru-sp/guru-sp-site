@@ -21,10 +21,17 @@
   <h3>Patrocinadores</h3>
   <ul class="sponsors">
   <% @meeting.sponsors.each do |sponsor| %>
-    <li><%= link_to sponsor.name, sponsor.url %></li>
+    <li>
+      <%= link_to sponsor.url do %>
+        <% if sponsor.logo? %>
+          <%= image_tag(sponsor.logo.thumb) %>
+        <% else %>
+          <%= sponsor.name %>
+        <% end %>
+      <% end %>
+    </li>
   <% end %>
   </ul>
-
 
   <p><%= agendatech_link_message @meeting.agendatech_link, @meeting.date %></p>
 

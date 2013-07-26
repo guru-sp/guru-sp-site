@@ -27,7 +27,11 @@ RailsAdmin.config do |config|
     end
   end
 
-
+  config.model Sponsor do
+    edit do
+      field :logo, :carrierwave
+    end
+  end
 
 end
 

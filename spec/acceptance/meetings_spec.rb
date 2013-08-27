@@ -20,18 +20,29 @@ feature "Navigating Meetings", %q{
                        :sponsors => [caelum]
   end
 
-  scenario "checking a meeting date in meetings page" do
+  def navigate_to_meeting_99
     visit "/"
     click_link "Encontros"
     click_link "2012"
     click_link "Encontro 99"
-    page.should have_content "Encontro 99"
+  end
+
+  scenario "checking a meeting date in meetings page" do
+    navigate_to_meeting_99
     within ".date h3" do
       page.should have_content "Sábado, 10 de Novembro de 2012 às 09:00 hs"
     end
   end
 
-  scenario "checking a meeting date in meetings page" do
+  scenario "checking a meeting title, sponsor inside meeting's page" do
+    navigate_to_meeting_99
+    page.should have_content "Encontro 99"
+    within ".sponsors" do
+      page.should have_link "Caelum"
+    end
+  end
+
+  scenario "checking a meeting title, sponsor inside meeting's page" do
     visit "/"
     click_link "Encontros"
     click_link "2012"

@@ -1,5 +1,11 @@
 <h2><%= @meeting.title %></h2>
+
+<%= content_for :sidebar do %>
+  <%= render "sponsors", :sponsors => @meeting.sponsors if @meeting.sponsors.present? %>
+<% end %>
+
 <div class="inner meeting-body">
+
   <div class="info">
     <div class="date"><div class="icon date-icon"></div>
       <h3><%= l(@meeting.date) %></h3>
@@ -17,21 +23,6 @@
       Nenhuma descrição foi adicionada.
     <% end %>
   </p>
-
-  <h3>Patrocinadores</h3>
-  <ul class="sponsors">
-  <% @meeting.sponsors.each do |sponsor| %>
-    <li>
-      <%= link_to sponsor.url do %>
-        <% if sponsor.logo? %>
-          <%= image_tag(sponsor.logo.thumb) %>
-        <% else %>
-          <%= sponsor.name %>
-        <% end %>
-      <% end %>
-    </li>
-  <% end %>
-  </ul>
 
   <p><%= agendatech_link_message @meeting.agendatech_link, @meeting.date %></p>
 

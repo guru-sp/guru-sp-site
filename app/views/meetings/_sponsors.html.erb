@@ -1,0 +1,16 @@
+<div class="block notice sponsors">
+  <h2>Patrocinadores do encontro</h2>
+  <ul class="sponsors-list">
+  <% sponsors.each do |sponsor| %>
+    <li>
+      <%= link_to sponsor.url do %>
+        <% if sponsor.logo? %>
+          <%= image_tag(sponsor.logo.thumb) %>
+        <% else %>
+          <%= sponsor.name %>
+        <% end %>
+      <% end %>
+    </li>
+  <% end %>
+  </ul>
+</div>

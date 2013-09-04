@@ -156,6 +156,27 @@ h3 {
     }
 
   }
+
+  .sponsors {
+      background: white;
+      padding-bottom: 20px;
+    h2 {
+    padding-left: 10px;
+    }
+
+    ul li {
+      background: transparent;
+      border: none;
+      margin: 0px auto;
+      width: 150px;
+      a{
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .meeting-body {

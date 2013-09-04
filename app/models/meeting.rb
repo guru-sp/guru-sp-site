@@ -8,7 +8,7 @@ class Meeting < ActiveRecord::Base
   validates :title, :presence => true
   delegate :name, :to => :venue, :allow_nil => true, :prefix => :venue
 
-  default_scope order('date ASC')
+  default_scope order('date DESC')
 
   scope :visible, where(:visible => true)
 

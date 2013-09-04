@@ -21,13 +21,15 @@ describe Meeting do
   end
 
   describe "#next_meeting" do
+    let(:current_date) { DateTime.now }
+
     before do
-      FactoryGirl.create(:meeting, :title => "Encontro que já foi", :date => DateTime.now - 57.day)
-      FactoryGirl.create(:meeting, :title => "Encontro daqui 2 meses", :date => DateTime.now + 60.day)
+      FactoryGirl.create(:meeting, :title => "Encontro que já foi", :date => current_date - 57.day)
+      FactoryGirl.create(:meeting, :title => "Encontro daqui 2 meses", :date => current_date + 60.day)
     end
 
     let!(:next_meeting) do
-      FactoryGirl.create(:meeting,:title => "Próximo encontro", :date => DateTime.now + 27.day)
+      FactoryGirl.create(:meeting,:title => "Próximo encontro", :date => current_date + 27.day)
     end
 
     it "returns the nearest meeting from today" do

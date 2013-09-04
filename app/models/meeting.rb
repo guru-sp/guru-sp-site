@@ -13,7 +13,7 @@ class Meeting < ActiveRecord::Base
   scope :visible, where(:visible => true)
 
   def self.next_meeting
-    self.where("date >= ?", Date.today).order('date ASC').first
+    self.unscoped.where("date >= ?", Date.today).order('date ASC').first
   end
 
   def self.from_year(year)

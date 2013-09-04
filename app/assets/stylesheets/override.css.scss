@@ -257,6 +257,11 @@ ul.album {
 
 ul.list{
   li {
+    border: 0px;
+  }
+
+  li.list-item {
+    border-bottom: 1px solid $gray;
     display: block;
     .description {
       height: 200px;

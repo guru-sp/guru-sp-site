@@ -4,7 +4,7 @@
 <p>O <strong>GURU-SP</strong> existe graças a seus membros. Faça parte dessa lista e ajude-nos a saber um pouco mais sobre você  <%= link_to "registrando-se aqui", new_user_registration_path %>.</p>
 <ul class="list">
   <% for user in @users %>
-  <li class="user" >
+  <li class="user list-item" >
     <div class="left">
       <%= gravatar_image_tag(user.email, :class => "avatar") %>
     </div>

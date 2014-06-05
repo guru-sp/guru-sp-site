@@ -304,7 +304,6 @@ GEM
     tzinfo (0.3.37)
     warden (1.2.1)
       rack (>= 1.0)
-    web-app-theme (0.7.0)
     websocket (1.0.7)
     xml-simple (1.1.2)
     xpath (0.1.4)
@@ -346,4 +345,3 @@ DEPENDENCIES
   sqlite3-ruby
   therubyracer
   thin
-  web-app-theme (>= 0.7.0)

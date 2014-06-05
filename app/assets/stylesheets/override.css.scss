@@ -15,23 +15,11 @@ $gray: #c0c0c0;
   }
 }
 
-@mixin button-gradient($start, $end) {
-  background: $start; /* Old browsers */
-  background: -moz-linear-gradient(top, $start 0%, $end 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start), color-stop(100%,$end)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, $start 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, $start 0%,$end 100%); /* Opera11.10+ */
-  background: -ms-linear-gradient(top, $start 0%,$end 100%); /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start', endColorstr='$end',GradientType=0 ); /* IE6-9 */
-  background: linear-gradient(top, $start 0%,$end 100%); /* W3C */
-}
-
 @include links($guru_red);
 
 body {
-  font-size: 15px;
-  font-family: sans-serif;
-  background: url('/assets/white_carbon_bg.png') repeat;
+  padding-top: 50px;
+  margin: 20px;
 }
 
 h3 {
@@ -92,7 +80,6 @@ h3 {
     word-spacing: 0.32em;
     -moz-border-radius: 9px;
     -webkit-border-radius: 9px;
-    @include button-gradient(#666, $dark_gray);
   }
 
   .tweets {

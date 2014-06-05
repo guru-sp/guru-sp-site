@@ -28,7 +28,6 @@ end
 
 group :development, :test do
   gem "factory_girl_rails"
-  gem "web-app-theme", ">=0.7.0"
   gem "evergreen", :require => "evergreen/rails"
 end
 

@@ -3,61 +3,31 @@
 <head>
   <title>Grupo de Usuários Ruby de SP | GURU-SP</title>
   <%= favicon_link_tag "favicon-guru.png", :type => "image/png" %>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+  <![endif]-->
   <%= stylesheet_link_tag "application" %>
   <%= yield :stylesheets %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <div id="container">
-    <div id="header">
-      <%= image_tag("logo-guru.png", :size => "83x60", :alt => "GURU-SP - logo", :id => "logo") %>
-      <h1><%= link_to_unless_current("GURU SP", "/") %></h1>
-      <div id="main-navigation">
-        <ul class="wat-cf">
+  <div class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <%= link_to("GURU SP", "/", :class => 'navbar-brand') %>
+      </div>
+
+      <div class="navbar-collapse colapse">
+        <ul class="nav navbar-nav">
           <li><%= link_to "Encontros", meetings_path, :title => "Encontros presenciais do GURU-SP" %></li>
           <li><%= link_to "Sobre", about_path, :title => "Saiba mais sobre o GURU-SP" %></li>
         </ul>
       </div>
-      <div id="user-navigation">
-        <ul class="wat-cf">
-          <% if user_signed_in? %>
-          <li><%= link_to t("web-app-theme.profile"), edit_user_registration_path %></a></li>
-          <li><%= link_to t("web-app-theme.logout"), destroy_user_session_path, :method => :delete %></a></li>
-          <% else %>
-          <li><%= link_to "Registrar-se", new_user_registration_path %></li>
-          <li><%= link_to "Login", new_user_session_path %></li>
-          <% end %>
-        </ul>
-      </div>
-    </div>
-    <div id="wrapper" class="wat-cf">
-      <div id="main">
-        <div class="flash">
-          <% flash.each do |type, message| -%>
-            <div class="message <%= type %>">
-              <p><%= message %></p>
-            </div>
-          <% end -%>
-        </div>
-        <div class="block" id="block-text">
-          <div class="content">
-            <%= yield %>
-          </div>
-        </div>
-        <div id="footer">
-          <div class="block">
-            <p>
-              Copyleft &copy; <%= Time.now.year %> GURU SP - Grupo de Usuários Ruby de SP -
-              <a href="mailto:contato@gurusp.org">contato@gurusp.org</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="sidebar">
-        <%= yield :sidebar %>
-        <%= render "shared/next_meeting" %>
-        <%= render "shared/twitter" %>
-      </div>
+
     </div>
   </div>
 </body>

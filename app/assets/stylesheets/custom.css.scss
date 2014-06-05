@@ -1,0 +1,27 @@
+$guru-red: #700000;
+$guru-sec-red: #EF4848;
+
+$dark_gray: #111111;
+$medium_gray: #333333;
+$gray: #c0c0c0;
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.navbar-inverse {
+  background: $guru-red;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: $guru-sec-red;
+}
+
+.navbar-header {
+  height: 50px;
+}
+
+.navbar-brand {
+
+}

@@ -82,9 +82,7 @@ describe Meeting do
 
     context "when an album_id is present" do
       it "initializes a new album with the album_id" do
-        album = mock.as_null_object
-        Album.should_receive(:new).with(album_id).and_return(album)
-
+        Album.should_receive(:new).with(album_id).and_return(double.as_null_object)
         subject.photos
       end
 
@@ -109,7 +107,7 @@ describe Meeting do
 
   describe "#venue_name" do
     it "responds to venue_name" do
-      expect {subject.venue_name}.to_not raise_error NoMethodError
+      expect(subject).to respond_to(:venue_name)
     end
   end
 

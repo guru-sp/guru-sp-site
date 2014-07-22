@@ -1,9 +1,8 @@
 /* ...
 *= require jquery-tipsy
 *= require jquery-ui
+*= require bootstrap
 *= require lightbox
-*= require custom
-*= require sponsors
-
+*= require freelancer
 */
 

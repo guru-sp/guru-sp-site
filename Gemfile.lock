@@ -339,7 +339,7 @@ DEPENDENCIES
   rspec (~> 2.10)
   rspec-rails (~> 2.10)
   ruby_parser
-  sass
+  sass-rails
   shoulda-matchers!
   simplecov (>= 0.4.2)
   sqlite3-ruby

@@ -13,13 +13,14 @@ $blue:         #197CC9;
 $darker-blue:  #005899;
 $red:          #ED0000;
 $guru-red:     #B00000;
+$dark-red:     #600000;
 
 $primary-color:   $guru-red;
 $secondary-color: $blue;
 $tertiary-color:  $red;
 $text-color:      #333;
 $gray-lighter:    lighten(#000, 93.5%);
-
+$hover-color:     $dark-red;
 
 
 html {
@@ -520,7 +521,7 @@ cite {
   color: $primary-color;
 }
 a.text-primary:hover {
-  color: #1a242f;
+  color: $hover-color;
 }
 .text-success {
   color: #ffffff;
@@ -551,7 +552,7 @@ a.text-danger:hover {
   background-color: $primary-color;
 }
 a.bg-primary:hover {
-  background-color: #1a242f;
+  background-color: $hover-color;
 }
 .bg-success {
   background-color: $secondary-color;
@@ -3977,7 +3978,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #1a242f;
+  background-color: $hover-color;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -3986,11 +3987,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #1a242f;
+  border-color: $hover-color;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #1a242f;
+  background-color: $hover-color;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #ffffff;
@@ -4002,7 +4003,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #1a242f;
+  background-color: $hover-color;
   color: #ffffff;
 }
 @media (max-width: 767px) {
@@ -4018,7 +4019,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: #1a242f;
+    background-color: $hover-color;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -4308,7 +4309,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #1a242f;
+  background-color: $hover-color;
 }
 .label-success {
   background-color: $secondary-color;

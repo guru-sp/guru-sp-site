@@ -1,0 +1,48 @@
+
+header {
+  background: $tertiary-color image-url("bg-encontro.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  .container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  img {
+    display: block;
+    margin: 0 auto 20px;
+  }
+  .intro-text {
+    text-align: center;
+    padding-bottom: 30px;
+    .name {
+      display: block;
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 2em;
+    }
+    .subtitle {
+      font-size: 1.3em;
+      font-weight: 300;
+    }
+  }
+}
+
+@media(min-width:768px) {
+  header {
+    .container {
+      padding: 200px 0 100px;
+    }
+    .intro-text {
+      .name {
+        font-size: 5em;
+      }
+      .skills {
+        font-size: 1.75em;
+      }
+    }
+  }
+}

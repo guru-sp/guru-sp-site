@@ -1,91 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Grupo de Usuários Ruby de SP | GURU-SP</title>
-  <%= favicon_link_tag "favicon-guru.png", :type => "image/png" %>
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-    <script src="../../assets/js/html5shiv.js"></script>
-    <script src="../../assets/js/respond.min.js"></script>
-  <![endif]-->
-
-
-  <%= stylesheet_link_tag "application" %>
-  <%= yield :stylesheets %>
-  <%= csrf_meta_tag %>
-</head>
-<body id="page-top" class="index">
+  <head>
+    <title>Grupo de Usuários Ruby de SP | GURU-SP</title>
+    <%= favicon_link_tag "favicon-guru.png", type: "image/png" %>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+    <%= stylesheet_link_tag "application" %>
+    <%= yield :stylesheets %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body id="page-top" class="index">
 
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Menu</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">
-                  Guru-SP
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll active">
-                        <a href="#portfolio">Participe</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Encontros</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">Sobre</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#page-top">
+            <%= image_tag 'logos/guru_sp_text_white.svg',
+              class: 'img-responsive',
+              alt: 'Grupo de Usuários Ruby de São Paulo',
+              size: '200x33' %>
+          </a>
         </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li class="page-scroll active">
+              <a href="#portfolio">Participe</a>
+            </li>
+            <li>
+              <a href="#portfolio">Encontros</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#about">Sobre</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <header>
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12">
-                  <div class="intro-text">
-                      <span class="name">Guru-SP</span>
-                      <hr class="star-light">
-                      <span class="skills">Grupo de Usuários Ruby de São Paulo</span>
-                      <p>
-                        Somos um grupo de desenvolvedores entusiastas da linguagem de programação Ruby.
-                        Promovemos encontros para aprendermos, ensinarmos e divulgar o uso de Ruby e de
-                        outras ferramentas e técnicas relacionadas ao mundo do desenvolvimento de software.
-                      </p>
-                      <p>
-                        Saiba mais
-                      </p>
-                      <p>Quero participar</p>
+    <%= yield %>
 
-                  </div>
-              </div>
-          </div>
-      </div>
-    </header>
-
-    <div class="container">
-      <div class="row">
-        <%= yield %>
-      </div>
-    </div>
-
-
-</body>
-<%= javascript_include_tag "application" %>
-<%= yield :javascripts %>
-<%= render "shared/analytics" %>
+    <%= render 'shared/footer' %>
+  </body>
+  <%= javascript_include_tag "application" %>
+  <%= yield :javascripts %>
+  <%= render "shared/analytics" %>
 </html>
 

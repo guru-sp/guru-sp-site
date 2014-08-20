@@ -1,0 +1,11 @@
+<%= content_for :content do %>
+<div class="container container-main">
+  <div class="row">
+    <div class="col-lg-12">
+      <%= yield %>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<%= render template: "layouts/application" %>

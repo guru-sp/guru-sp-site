@@ -46,7 +46,7 @@
       </div>
     </nav>
 
-    <%= yield %>
+    <%= content_for?(:content) ? yield(:content) : yield %>
 
     <%= render 'shared/footer' %>
   </body>

@@ -1,19 +1,27 @@
-<div class="container container-main">
-  <div class="row">
-    <h2>Encontros Presenciais</h2>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 intro-text">
+        <h1 class="title">Encontros</h1>
+      </div>
+    </div>
+  </div>
+</header>
 
+<div class="container">
+  <div class="row">
     <p>
      Geralmente realizamos um encontro bimestral, em um sábado pela manhã no auditório da <a href="http://www.caelum.com.br">Caelum</a>
-    </p>
-    <o>
+   </p>
+   <o>
      Nos encontros nossos membros e convidados fazem apresentações sobre projetos pessoais, novas tecnologias e experiências profissionais além de atividades como mesas redonda e coding dojos. Após o encontro, os participantes se reunem em algum bar para descontrair. Os encontros são abertos a todos: curiosos, iniciantes ou programadores experientes.
-    <p>
+     <p>
       Divulgamos nossos encontros na <%= link_to "Agendatech", "http://agendatech.com.br" %> e geralmente a sumbissão de propostas de palestras é feita através do <%= link_to "Call4Paperz", "http://call4paperz.com" %>, duas ferramentas criadas pela comunidade.
     </p>
 
     <ul class="years">
       <% 2008.upto(@current_year) do |year| %>
-        <li><%= link_to_unless_current year, meetings_path(:ano => year) %></li>
+      <li><%= link_to_unless_current year, meetings_path(:ano => year) %></li>
       <% end %>
     </ul>
 
@@ -32,7 +40,7 @@
     </ul>
 
     <% if @meetings.empty? %>
-      <p class="none">Nenhum encontro em <%= content_tag(:strong, @year) %>.</p>
+    <p class="none">Nenhum encontro em <%= content_tag(:strong, @year) %>.</p>
     <% end %>
 
   </div>

@@ -1,55 +1,38 @@
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 intro-text">
-            <%= image_tag 'logos/guru_sp_home_logo.svg',
-            class: 'img-responsive',
-              alt: 'Grupo de Usuários Ruby de São Paulo',
-              size: '300x306' %>
-              <hr class="star-light">
-              <h1 class="subtitle">Grupo de Usuários Ruby de São Paulo</h1>
-            </div>
-
-            <div class="col-lg-4 col-lg-offset-2">
-              <p>
-                Somos um grupo de desenvolvedores de software entusiastas da <a href="https://www.ruby-lang.org/pt/">linguagem de programação Ruby.</a>
-              </p>
-            </div>
-
-            <div class="col-lg-4">
-              <p>
-                Promovemos encontros presenciais para ensinar, aprender e divulgar o uso de Ruby e de
-                ferramentas e técnicas relacionadas.
-              </p>
-
-            </div>
-
-          </div>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 intro-text">
+        <%= image_tag 'logos/guru_sp_home_logo.svg',
+        class: 'img-responsive',
+          alt: 'Grupo de Usuários Ruby de São Paulo',
+          size: '300x306' %>
+          <hr class="star-light">
+          <h1 class="subtitle">Grupo de Usuários Ruby de São Paulo</h1>
         </div>
-      </header>
 
-      <div class="container">
-        <div class="row">
-          <h3>Próximo encontro</h3>
-            <p>
-              <%= next_meeting_message(@next_meeting) %>
-            </p>
-
+        <div class="col-lg-4 col-lg-offset-2">
           <p>
-            <a href="https://groups.google.com/group/ruby-sp?hl=pt">Inscreva-se em nossa lista de discussão</a> para conhecer mais pessoas interessadas na linguagem e tirar suas dúvidas sobre Ruby e colaborar na realização de nossos encontros.<br />
-            Para dúvidas específicas sobre o framework web Ruby on Rails recomendamos a <a href="https://groups.google.com/group/rails-br?hl=pt">Rails-BR</a>.<br />
-            Outras lugares em que você nos encontra:
-            <ul>
-              <li>
-                <a href="/canal-irc">Nosso canal de <abbr title="Internet Relay Chat">IRC</abbr></a> <strong>#guru-sp</strong>, na rede <em>freenode</em>.
-              </li>
-              <li>
-                <a href="https://www.facebook.com/groups/gurusp/?fref=ts">Grupo do Guru-SP no Facebook</a>
-              </li>
-              <li>
-                <a href="https://plus.google.com/communities/117819553531335803357">Comunidade do Guru-SP no Google+</a>
-              </li>
-            </ul>
+            Somos um grupo de desenvolvedores de software entusiastas da <a href="https://www.ruby-lang.org/pt/">linguagem de programação Ruby.</a>
           </p>
         </div>
+
+        <div class="col-lg-4">
+          <p>
+            Promovemos encontros presenciais para ensinar, aprender e divulgar o uso de Ruby e de
+            ferramentas e técnicas relacionadas.
+          </p>
+
+        </div>
+
       </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <h3>Próximo encontro</h3>
+        <p>
+          <%= next_meeting_message(@next_meeting) %>
+        </p>
+    </div>
+  </div>

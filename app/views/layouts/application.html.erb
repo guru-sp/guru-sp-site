@@ -23,7 +23,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#page-top">
+          <a class="navbar-brand" href="/">
             <%= image_tag 'logos/guru_sp_text_white.svg',
               class: 'img-responsive',
               alt: 'Grupo de Usuários Ruby de São Paulo',
@@ -33,19 +33,12 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
+            <%= nav_link 'Encontros', meetings_path, title: "Encontros presenciais do GURU-SP" %>
+            <%= nav_link 'Sobre',     about_path   , title: "Saiba mais sobre o GURU-SP" %>
             <li class="hidden">
               <a href="#page-top"></a>
             </li>
-            <li class="page-scroll active">
-              <a href="#portfolio">Participe</a>
-            </li>
-            <li>
-              <a href="#portfolio">Encontros</a>
-            </li>
-            <li class="page-scroll">
-              <a href="#about">Sobre</a>
-            </li>
-            <li class="page-scroll">
+            <li class="hidden">
               <a href="#contact">Contato</a>
             </li>
           </ul>

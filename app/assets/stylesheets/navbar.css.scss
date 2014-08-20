@@ -29,6 +29,9 @@
   .navbar-nav {
     letter-spacing: 1px;
     li {
+      a:hover {
+        color: $light-yellow;
+      }
       a:focus {
         outline: none;
       }

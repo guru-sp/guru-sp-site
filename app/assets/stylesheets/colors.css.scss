@@ -5,11 +5,12 @@ $darker-blue:  #005899;
 $red:          #ED0000;
 $guru-red:     #B00000;
 $dark-red:     #600000;
-
+$gray:         #333;
+$gray-lighter: lighten(#000, 93.5%);
+$light-red:    lighten($red, 95%);
 
 $primary-color:   $guru-red;
 $secondary-color: $blue;
 $tertiary-color:  #1a1a1a;
-$text-color:      #333;
-$gray-lighter:    lighten(#000, 93.5%);
+$text-color:      $gray;
 $hover-color:     $dark-red;

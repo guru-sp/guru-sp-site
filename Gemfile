@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem "rails", "~> 3.2"
 
 gem "sqlite3-ruby"
+gem "libv8", "3.16.14.7"
 gem "therubyracer"
 gem "execjs"
 gem "rails_admin"
@@ -28,7 +29,6 @@ end
 
 group :development, :test do
   gem "factory_girl_rails"
-  gem "web-app-theme", ">=0.7.0"
   gem "evergreen", :require => "evergreen/rails"
 end
 

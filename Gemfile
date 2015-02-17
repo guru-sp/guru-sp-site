@@ -19,6 +19,10 @@ gem "rich"
 gem "mini_magick"
 gem "carrierwave"
 
+gem 'capistrano'
+gem 'capistrano-bundler'
+gem 'capistrano-rails'
+
 group :development do
   gem "thin"
   gem "guard"

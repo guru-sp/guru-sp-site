@@ -317,3 +317,14 @@ ul.list .user h3 {
   padding: 0;
   margin: 0;
 }
+
+div.selector,
+div.selector span,
+div.checker span,
+div.radio span,
+div.uploader,
+div.uploader span.action,
+div.button,
+div.button span {
+  background-image: image-url("sprite.png");
+}

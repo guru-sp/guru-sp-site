@@ -25,7 +25,7 @@ feature "Accessing Admin Panel", %q{
     end
     page.should have_content "Administração do site"
   end
-  
+
   scenario "succesful sign out" do
     visit "/admin"
     login_with(admin_user.email, password)
@@ -34,7 +34,7 @@ feature "Accessing Admin Panel", %q{
       page.should have_content "Desconectado com sucesso."
     end
   end
-  
+
   scenario "user is not admin" do
     visit "/admin"
     login_with(common_user.email, "1234567890")

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg4349"
+   inkscape:version="0.92.1 r"
+   sodipodi:docname="new-logo-guru.svg">
+  <defs
+     id="defs4343">
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3314"
+       id="radialGradient3419"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.4175547,-0.9303546,0.5912592,0.8972474,-660.16395,-44.170409)"
+       cx="293.97064"
+       cy="885.41809"
+       fx="293.97064"
+       fy="885.41809"
+       r="249.07143" />
+    <linearGradient
+       id="linearGradient3314">
+      <stop
+         style="stop-color:#d40000;stop-opacity:1;"
+         offset="0"
+         id="stop3316" />
+      <stop
+         style="stop-color:#740000;stop-opacity:1;"
+         offset="1"
+         id="stop3318" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3250"
+       id="linearGradient3402"
+       gradientUnits="userSpaceOnUse"
+       x1="295.81842"
+       y1="787.58051"
+       x2="159.57845"
+       y2="864.41315"
+       gradientTransform="translate(119.29293,-407.53295)" />
+    <linearGradient
+       id="linearGradient3250">
+      <stop
+         style="stop-color:#fff5e5;stop-opacity:1;"
+         offset="0"
+         id="stop3252" />
+      <stop
+         id="stop3254"
+         offset="0.31485197"
+         style="stop-color:#c90000;stop-opacity:0.52991456;" />
+      <stop
+         style="stop-color:#ff2a2a;stop-opacity:1;"
+         offset="1"
+         id="stop3256" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       id="filter4194">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.2563773"
+         id="feGaussianBlur4196" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3262"
+       id="linearGradient3237"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-0.1103926,-398.44791)"
+       x1="252.9066"
+       y1="734.0354"
+       x2="102.32359"
+       y2="819.15894" />
+    <linearGradient
+       id="linearGradient3262">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3264" />
+      <stop
+         id="stop3266"
+         offset="0.27113202"
+         style="stop-color:#c90000;stop-opacity:0.52991456;" />
+      <stop
+         style="stop-color:#ff2a2a;stop-opacity:1;"
+         offset="1"
+         id="stop3268" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3404"
+       id="linearGradient3260"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(306.18509,-316.30246)"
+       x1="257.34653"
+       y1="741.22632"
+       x2="105.66607"
+       y2="827.2666" />
+    <linearGradient
+       id="linearGradient3404">
+      <stop
+         id="stop3406"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         style="stop-color:#c90000;stop-opacity:0.52991456;"
+         offset="0.2420456"
+         id="stop3408" />
+      <stop
+         id="stop3410"
+         offset="1"
+         style="stop-color:#ff2a2a;stop-opacity:1;" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4516"
+       id="radialGradient4287"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0000001,0.5107103,-0.4526456,0.8863061,32.143785,-41.33708)"
+       cx="96.749252"
+       cy="71.013168"
+       fx="96.749252"
+       fy="71.013168"
+       r="43.201912" />
+    <linearGradient
+       id="linearGradient4516">
+      <stop
+         style="stop-color:#ffcc00;stop-opacity:1;"
+         offset="0"
+         id="stop4518" />
+      <stop
+         style="stop-color:#d78f33;stop-opacity:1;"
+         offset="1"
+         id="stop4520" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="400"
+     inkscape:cy="560"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1343"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4346">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4285"
+       transform="matrix(0.26458333,0,0,0.26458333,4.2893238,15.382193)">
+      <g
+         id="g4264">
+        <g
+           id="g4235">
+          <path
+             inkscape:export-ydpi="90"
+             inkscape:export-xdpi="90"
+             inkscape:export-filename="/home/hlb/Área de Trabalho/logo_guru_4.png"
+             style="fill:url(#radialGradient3419);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             d="m 134.43732,395.04701 h 163.70214 l 85,149.91878 132.77425,-0.0172 117.22575,-159.90158 H 493.13961 L 413.13946,245.04699 h -160 z"
+             id="path3665"
+             sodipodi:nodetypes="ccccccccc"
+             inkscape:connector-curvature="0" />
+          <path
+             inkscape:export-ydpi="90"
+             inkscape:export-xdpi="90"
+             inkscape:export-filename="/home/hlb/Área de Trabalho/logo_guru_4.png"
+             style="opacity:0.3;fill:url(#linearGradient3402);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4194)"
+             d="m 294.57451,247.08177 151.82289,295 h 70.38857 l -164.9393,-295 z"
+             id="path3400"
+             sodipodi:nodetypes="ccccc"
+             inkscape:connector-curvature="0" />
+          <path
+             sodipodi:nodetypes="ccccc"
+             id="path3235"
+             d="m 203.99295,314.61796 37.17998,78.46381 h 48.54633 L 236.66139,272.99393 Z"
+             style="opacity:0.3;fill:url(#linearGradient3237);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4194)"
+             inkscape:export-filename="/home/hlb/Área de Trabalho/logo_guru_4.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90"
+             inkscape:connector-curvature="0" />
+          <path
+             inkscape:export-ydpi="90"
+             inkscape:export-xdpi="90"
+             inkscape:export-filename="/home/hlb/Área de Trabalho/logo_guru_4.png"
+             style="opacity:0.3;fill:url(#linearGradient3260);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4194)"
+             d="m 506.61753,387.08177 47.46505,104.81755 28.9496,-40.94521 -29.52144,-63.87234 z"
+             id="path3258"
+             sodipodi:nodetypes="ccccc"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g3111"
+           transform="matrix(0.925413,0,0,0.889161,73.76771,194.02933)"
+           inkscape:export-filename="/home/hlb/Área de Trabalho/logo_guru_4.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90">
+          <path
+             inkscape:export-filename="/home/hlb/Área de Trabalho/logo_guru_2.png"
+             inkscape:export-ydpi="90"
+             inkscape:export-xdpi="90"
+             inkscape:transform-center-y="-12.978622"
+             inkscape:transform-center-x="7.7871734"
+             transform="rotate(-26.782064,908.84726,-324.85897)"
+             d="M 101.23325,114.00778 84.0188,88.864633 53.547337,88.791456 72.140334,64.649879 62.79373,35.647182 91.499287,45.870016 116.19423,28.018541 l -0.85199,30.459636 24.60892,17.969878 -29.23211,8.602257 z"
+             inkscape:randomized="0"
+             inkscape:rounded="0"
+             inkscape:flatsided="false"
+             sodipodi:arg2="2.0572178"
+             sodipodi:arg1="1.4288993"
+             sodipodi:r2="22.943178"
+             sodipodi:r1="45.88636"
+             sodipodi:cy="68.582603"
+             sodipodi:cx="94.743942"
+             sodipodi:sides="5"
+             id="path3115"
+             style="opacity:1;fill:url(#radialGradient4287);fill-opacity:1;stroke:#ffffff;stroke-width:3.30722094;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             sodipodi:type="star" />
+        </g>
+      </g>
+      <g
+         id="g4271">
+        <path
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:166.15176392px;line-height:125%;font-family:AngsanaUPC;-inkscape-font-specification:AngsanaUPC;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 178.38884,651.14675 c -2.0917,-4.24711 -2.78203,-8.49423 0,-12.74134 h 34.68141 v 30.15187 c -8.92685,7.80836 -20.26553,11.71253 -34.01606,11.71253 -13.19615,0 -23.23185,-3.67994 -30.10713,-11.03985 -6.87529,-7.35989 -10.31293,-16.81696 -10.31293,-28.37125 0,-12.9787 3.82576,-22.69957 11.47729,-29.16264 7.65152,-6.46292 16.99415,-9.69441 28.02792,-9.69449 19.18421,8e-5 30.49517,7.41273 33.93288,22.23799 -4.22542,4.34135 -10.92549,5.97865 -15.96842,2.84899 -2.43967,-8.01933 -8.42783,-12.02903 -17.96446,-12.02909 -15.30311,6e-5 -22.95463,8.38877 -22.95461,25.16613 -2e-5,8.38874 1.95444,14.98363 5.8634,19.78469 3.90891,4.8011 9.55052,7.20164 16.92487,7.20163 6.76434,1e-5 13.05744,-2.13673 18.87932,-6.41024 v -9.65493 z m 49.40229,-47.87895 c 5.62953,-1.95296 11.03293,-2.32305 16.0516,0 v 40.99388 c -3e-5,6.06734 0.22176,10.47272 0.66535,13.21617 0.44354,2.74349 1.9683,5.05171 4.57428,6.92464 2.60593,1.87297 6.23764,2.80944 10.89512,2.80943 5.87722,1e-5 9.88319,-1.31896 12.0179,-3.95694 2.13462,-2.63794 3.20195,-8.67886 3.202,-18.12277 V 603.2678 c 6.00396,-2.28702 11.27005,-1.99145 16.05159,0 v 39.8068 c -7e-5,9.28564 -0.59611,16.23665 -1.78813,20.85306 -1.19215,4.61644 -4.11692,8.49424 -8.77431,11.6334 -4.65752,3.13917 -11.39418,4.70875 -20.21003,4.70875 -8.59415,0 -15.33082,-1.33217 -20.21004,-3.9965 -4.87925,-2.66433 -8.17828,-6.13324 -9.89709,-10.40675 -1.71883,-4.27347 -2.57825,-11.68613 -2.57824,-22.23799 z m 80.34112,75.73579 V 603.2678 h 33.84972 c 10.47923,8e-5 18.31096,1.50371 23.4952,4.51091 5.18412,3.00733 7.77622,8.57343 7.77629,16.69827 -7e-5,12.13466 -7.01397,19.178 -21.04172,21.13006 5.43364,2.69074 11.33863,8.88994 17.71497,18.59761 l 9.73075,14.79894 c -5.29285,3.43017 -11.09064,3.60174 -19.212,0 l -17.29913,-24.53301 c -1.71886,-2.4269 -3.63174,-4.2207 -5.73864,-5.38144 -2.10698,-1.16067 -5.43374,-1.74102 -9.98027,-1.74105 h -3.24358 v 31.6555 z M 324.18384,635.319 h 11.89315 c 8.09505,4e-5 13.55647,-0.64626 16.38426,-1.93891 2.82768,-1.29254 4.24155,-3.91731 4.24162,-7.8743 -7e-5,-3.74585 -1.16443,-6.2519 -3.4931,-7.51819 -2.32878,-1.26615 -7.81791,-1.89926 -16.46743,-1.89933 h -12.5585 z m 63.95685,-32.0512 c 7.49102,-3.11343 11.86164,-1.6881 16.05159,0 v 40.99388 c -2e-5,6.06734 0.22176,10.47272 0.66535,13.21617 0.44354,2.74349 1.9683,5.05171 4.57429,6.92464 2.60593,1.87297 6.23763,2.80944 10.89512,2.80943 5.87722,1e-5 9.88318,-1.31896 12.0179,-3.95694 2.13461,-2.63794 3.20194,-8.67886 3.20201,-18.12277 V 603.2678 c 5.45572,-2.24926 10.6131,-2.62662 16.05158,0 v 39.8068 c -7e-5,9.28564 -0.59611,16.23665 -1.78813,20.85306 -1.19216,4.61644 -4.11693,8.49424 -8.77431,11.6334 -4.65751,3.13917 -11.39419,4.70875 -20.21004,4.70875 -8.59414,0 -15.33082,-1.33217 -20.21003,-3.9965 -4.87925,-2.66433 -8.17828,-6.13324 -9.89709,-10.40675 -1.71883,-4.27347 -2.57824,-11.68613 -2.57824,-22.23799 z"
+           id="text3341"
+           sodipodi:nodetypes="ccccsssssccssssccccccssssccccssssscccccsscccccsccccccsssccccccssssccccssssscc"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           x="478.38687"
+           y="685.19867"
+           id="text7219"
+           transform="scale(1.0098734,0.9902231)"
+           inkscape:export-filename="C:\Users\hlb\Desktop\logo_guru_6.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90"><tspan
+             sodipodi:role="line"
+             x="478.38687"
+             y="685.19867"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:104.13616943px;line-height:125%;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="tspan7221">SP</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
